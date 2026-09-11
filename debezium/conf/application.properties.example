@@ -1,0 +1,52 @@
+# ============================================================================
+# Configuration Debezium Server — CDC sur Supabase PostgreSQL
+# ============================================================================
+# Documentation : https://debezium.io/documentation/reference/stable/operations/debezium-server.html
+#
+# À COMPLÉTER avant de lancer :
+#   - debezium.source.database.hostname / port / user / password / dbname
+#     (récupérables dans Supabase > Settings > Database > Connection parameters,
+#      utiliser le "Session pooler" ou la connexion directe, PAS le "Transaction pooler"
+#      qui ne supporte pas la réplication logique)
+
+# --- Sink : Redis ---
+debezium.sink.type=redis
+debezium.sink.redis.address=redis:6379
+debezium.sink.redis.memory.limit.mb=100
+
+# --- Source : PostgreSQL (Supabase) ---
+debezium.source.connector.class=io.debezium.connector.postgresql.PostgresConnector
+debezium.source.offset.storage.file.filename=data/offsets.dat
+debezium.source.offset.flush.interval.ms=0
+debezium.source.database.hostname=CHANGE_ME
+debezium.source.database.port=5432
+debezium.source.database.user=CHANGE_ME
+debezium.source.database.password=CHANGE_ME
+debezium.source.database.dbname=neondb
+debezium.source.database.sslmode=require
+debezium.source.topic.prefix=sportdata
+
+# Plugin logique compatible avec les instances PostgreSQL managées (Supabase) :
+# pgoutput est natif à PostgreSQL, pas besoin d'extension supplémentaire.
+debezium.source.plugin.name=pgoutput
+
+# Nom de la publication PostgreSQL à créer manuellement au préalable (voir README) :
+#   CREATE PUBLICATION dbz_publication FOR TABLE salaries, eligibilite_avantages;
+debezium.source.publication.name=dbz_publication
+debezium.source.publication.autocreate.mode=disabled
+
+# Slot de réplication (créé automatiquement par Debezium au premier démarrage)
+debezium.source.slot.name=debezium_slot
+
+# On ne capture que les tables pertinentes pour la démo CDC : les nouveaux
+# salariés (salaries) et les changements d'éligibilité (eligibilite_avantages)
+debezium.source.table.include.list=public.salaries,public.eligibilite_avantages,public.activites_sportives
+
+# Snapshot initial : capture l'état actuel des tables au démarrage, puis
+# bascule en flux continu des changements
+debezium.source.snapshot.mode=initial
+
+# --- Format des événements ---
+debezium.format.value=json
+debezium.format.key=json
+debezium.source.decimal.handling.mode=double

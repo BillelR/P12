@@ -1,0 +1,29 @@
+id: pipeline_sport_data
+namespace: sportdata
+
+description: |
+  Pipeline complet du POC "Avantages Sportifs" :
+  1. Génération des données d'activités simulées (Faker)
+  2. Contrôles qualité (Great Expectations) — arrête le pipeline si échec critique
+  3. Chargement vers Supabase (ETL) + calcul d'éligibilité
+
+  Tourne dans l'image "sport-data-pipeline:latest", construite localement au
+  préalable avec :
+      docker build -t sport-data-pipeline:latest .
+  (à relancer après toute modification du code).
+
+tasks:
+  - id: pipeline_complet
+    type: io.kestra.plugin.scripts.python.Commands
+    containerImage: sport-data-pipeline:latest
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+      pullPolicy: NEVER
+    env:
+      SUPABASE_DB_URL: CHANGE_ME
+      GOOGLE_MAPS_API_KEY: CHANGE_ME
+      SLACK_WEBHOOK_URL: CHANGE_ME
+    commands:
+      - python3 src/generate_activities.py
+      - python3 src/quality_checks.py
+      - python3 src/etl.py

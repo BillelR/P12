@@ -1,0 +1,57 @@
+# Infra légère pour VM à 4 Go de RAM :
+#   - Redis      : sink des événements CDC capturés par Debezium (~80 Mo)
+#   - Debezium   : capture les changements sur Supabase PostgreSQL (~600 Mo)
+#   - Kestra     : orchestrateur du pipeline complet (~1 Go, mode standalone/H2)
+#
+# Lancer : docker compose up -d
+# Arrêter : docker compose down
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: sport_data_redis
+    ports:
+      - "6379:6379"
+    mem_limit: 150m
+    restart: unless-stopped
+
+  debezium-server:
+    image: quay.io/debezium/server:2.7.3.Final
+    container_name: sport_data_debezium
+    depends_on:
+      - redis
+    volumes:
+      - ./debezium/conf:/debezium/conf
+      - ./debezium/data:/debezium/data
+    mem_limit: 768m
+    environment:
+      - JAVA_OPTS=-Xmx512m
+    restart: unless-stopped
+
+  kestra:
+    image: kestra/kestra:latest
+    container_name: sport_data_kestra
+    user: root
+    command: server standalone
+    volumes:
+      - ./kestra/flows:/app/flows
+      - ./:/app/project
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
+    mem_limit: 1200m
+    environment:
+      KESTRA_CONFIGURATION: |
+        kestra:
+          server:
+            basicAuth:
+              enabled: false
+          repository:
+            type: h2
+          storage:
+            type: local
+            local:
+              base-path: "/app/storage"
+          queue:
+            type: h2
+    restart: unless-stopped

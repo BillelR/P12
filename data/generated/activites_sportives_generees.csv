@@ -1,0 +1,1315 @@
+id_activite,id_salarie,sport,date_activite,duree_minutes,distance_km,application_source,ville_pratique
+1,17027,Tennis,2025-09-21,73,,Apple Santé,Saint Bernard-la-Forêt
+2,17027,Tennis,2025-10-11,57,,Polar Flow,Carpentierdan
+3,17027,Tennis,2025-10-12,69,,Polar Flow,Fournier-sur-Legrand
+4,17027,Tennis,2025-11-01,58,,Apple Santé,Garcia
+5,17027,Tennis,2025-12-10,58,,Garmin Connect,Sainte Patrick-sur-Mer
+6,17027,Tennis,2025-12-18,70,,Garmin Connect,Lebrun-la-Forêt
+7,17027,Tennis,2025-12-30,69,,Suunto App,Delahayeboeuf
+8,17027,Tennis,2026-01-08,64,,Apple Santé,Blanchet
+9,17027,Tennis,2026-01-24,76,,Suunto App,Sainte Patriciaboeuf
+10,17027,Tennis,2026-02-19,58,,Apple Santé,Pasquier
+11,17027,Tennis,2026-04-12,47,,Polar Flow,Traore
+12,17027,Tennis,2026-04-22,54,,Strava,Lenoir
+13,17027,Tennis,2026-05-23,82,,Polar Flow,Collet-les-Bains
+14,17027,Tennis,2026-05-23,57,,Apple Santé,Gillet
+15,17027,Tennis,2026-06-07,81,,Garmin Connect,Diasboeuf
+16,17027,Tennis,2026-06-26,61,,Suunto App,Jacques-les-Bains
+17,17027,Tennis,2026-07-05,67,,Garmin Connect,Fouquet
+18,17027,Tennis,2026-07-31,79,,Suunto App,Allard
+19,17027,Tennis,2026-08-04,86,,Strava,FontaineBourg
+20,17027,Tennis,2026-08-12,87,,Strava,Sainte Guillaume
+21,17027,Tennis,2026-09-02,85,,Garmin Connect,Saint Alain-sur-Mer
+22,17027,Tennis,2026-09-04,77,,Suunto App,Lopez
+23,17036,Escalade,2025-11-18,76,,Polar Flow,Saint Maggie
+24,17036,Escalade,2025-12-19,101,,Apple Santé,Sainte Bernadette-les-Bains
+25,17036,Escalade,2025-12-20,116,,Polar Flow,Lecoq
+26,17036,Escalade,2026-02-19,89,,Strava,Charrier
+27,17036,Escalade,2026-03-13,108,,Garmin Connect,Gautier-la-Forêt
+28,17036,Escalade,2026-08-20,113,,Polar Flow,Philippe-sur-Brunet
+29,17757,Badminton,2025-09-13,58,,Polar Flow,Étienne-sur-Mer
+30,17757,Badminton,2026-05-08,49,,Polar Flow,RobinVille
+31,17757,Badminton,2026-06-27,72,,Strava,Techer
+32,17997,Tennis de table,2026-01-08,52,,Suunto App,Sainte Dominiquenec
+33,18918,Tennis,2025-09-18,83,,Suunto App,Maréchal-sur-Joubert
+34,18918,Tennis,2025-10-09,89,,Polar Flow,Diaz-sur-Clément
+35,18918,Tennis,2025-10-11,77,,Suunto App,Da Silvaboeuf
+36,18918,Tennis,2025-10-14,51,,Garmin Connect,Brun
+37,18918,Tennis,2025-10-31,86,,Polar Flow,Sainte Odette
+38,18918,Tennis,2025-11-07,66,,Suunto App,Saint Eugène-la-Forêt
+39,18918,Tennis,2025-11-21,59,,Polar Flow,Pascal-sur-Mer
+40,18918,Tennis,2025-12-27,73,,Apple Santé,Barthelemy-les-Bains
+41,18918,Tennis,2026-01-16,67,,Strava,Duval-la-Forêt
+42,18918,Tennis,2026-01-29,66,,Suunto App,Dijoux
+43,18918,Tennis,2026-02-01,71,,Strava,Saint Adèle-la-Forêt
+44,18918,Tennis,2026-02-07,75,,Apple Santé,Pereiradan
+45,18918,Tennis,2026-02-12,89,,Suunto App,Mercier
+46,18918,Tennis,2026-02-18,64,,Strava,Saint Claudeboeuf
+47,18918,Tennis,2026-02-28,86,,Strava,Traore
+48,18918,Tennis,2026-03-21,60,,Polar Flow,Courtois
+49,18918,Tennis,2026-03-21,55,,Apple Santé,Launaydan
+50,18918,Tennis,2026-04-09,59,,Suunto App,Lemoine
+51,18918,Tennis,2026-04-30,85,,Suunto App,Leroy-sur-Mer
+52,18918,Tennis,2026-06-12,73,,Polar Flow,PerrierVille
+53,18918,Tennis,2026-06-17,90,,Garmin Connect,Lopes
+54,18918,Tennis,2026-07-24,90,,Strava,Henry-sur-Regnier
+55,18918,Tennis,2026-07-25,56,,Apple Santé,Pierre
+56,18918,Tennis,2026-08-08,74,,Strava,Leconte
+57,18918,Tennis,2026-08-18,76,,Polar Flow,Godard
+58,18941,Runing,2025-09-13,25,9.5,Garmin Connect,Lamynec
+59,18941,Runing,2025-10-11,59,9.8,Strava,David-sur-Joly
+60,18941,Runing,2025-10-16,34,10.4,Garmin Connect,Andrenec
+61,18941,Runing,2025-11-13,37,5.4,Polar Flow,Riou-la-Forêt
+62,18941,Runing,2025-11-14,30,5.7,Polar Flow,David
+63,18941,Runing,2025-12-26,56,6.3,Strava,Jacquet-sur-Mer
+64,18941,Runing,2026-01-01,39,5.6,Strava,Paul
+65,18941,Runing,2026-01-16,25,9.9,Suunto App,BarbierBourg
+66,18941,Runing,2026-01-24,33,10.5,Strava,Leclerc-les-Bains
+67,18941,Runing,2026-02-03,38,10.9,Suunto App,Texier
+68,18941,Runing,2026-02-19,44,7.7,Apple Santé,Robert
+69,18941,Runing,2026-02-25,34,5.5,Polar Flow,Laine
+70,18941,Runing,2026-02-26,54,8.4,Polar Flow,Legros
+71,18941,Runing,2026-02-28,46,11.6,Polar Flow,Saint Sébastien
+72,18941,Runing,2026-03-13,40,10.5,Suunto App,Rocher
+73,18941,Runing,2026-04-18,31,4.4,Garmin Connect,Techer
+74,18941,Runing,2026-04-18,59,5.9,Garmin Connect,BouchetBourg
+75,18941,Runing,2026-05-09,48,5.6,Apple Santé,Lebreton-les-Bains
+76,18941,Runing,2026-05-14,41,4.8,Strava,Sainte Alexboeuf
+77,18941,Runing,2026-05-23,50,10.6,Strava,Noël
+78,18941,Runing,2026-05-27,33,11.5,Suunto App,Saint Emmanuelle-sur-Mer
+79,18941,Runing,2026-06-03,53,11.8,Apple Santé,Picard
+80,18941,Runing,2026-06-13,26,5.5,Strava,Traorenec
+81,18941,Runing,2026-06-13,35,4.9,Apple Santé,Besnard
+82,18941,Runing,2026-06-17,47,7.7,Strava,Fabredan
+83,18941,Runing,2026-07-16,28,6.0,Apple Santé,RouxVille
+84,18941,Runing,2026-08-06,37,4.5,Strava,Sainte Valentine
+85,18941,Runing,2026-08-07,28,10.4,Garmin Connect,Dupuis
+86,18941,Runing,2026-08-14,37,5.2,Garmin Connect,Bertrand
+87,18941,Runing,2026-08-25,51,5.9,Apple Santé,Guilbert
+88,19260,Runing,2025-09-23,28,8.6,Suunto App,Gillesboeuf
+89,19260,Runing,2025-09-26,44,6.5,Apple Santé,Le Goff-sur-Klein
+90,19260,Runing,2025-10-14,48,6.0,Garmin Connect,VaillantVille
+91,19260,Runing,2025-10-18,52,7.2,Garmin Connect,Sainte Laurentdan
+92,19260,Runing,2025-12-10,54,9.6,Apple Santé,Duval
+93,19260,Runing,2026-01-02,54,4.4,Strava,Jacquot
+94,19260,Runing,2026-02-13,39,7.3,Suunto App,Rousset
+95,19260,Runing,2026-02-18,49,10.3,Strava,Dubois
+96,19260,Runing,2026-04-23,29,4.6,Strava,Charpentier
+97,19260,Runing,2026-05-30,53,9.7,Strava,Philippe
+98,19260,Runing,2026-07-16,43,7.9,Apple Santé,Maillot
+99,19260,Runing,2026-08-26,60,6.3,Strava,Charles
+100,19260,Runing,2026-08-29,31,6.6,Strava,Lacroix
+101,20157,Basketball,2025-09-11,64,,Garmin Connect,TecherVille
+102,20157,Basketball,2025-09-12,69,,Suunto App,Payetdan
+103,20157,Basketball,2025-09-20,71,,Suunto App,GalletVille
+104,20157,Basketball,2025-10-05,69,,Garmin Connect,Saint Suzanne-sur-Mer
+105,20157,Basketball,2025-10-16,86,,Polar Flow,Bouchet
+106,20157,Basketball,2025-11-13,78,,Apple Santé,Vallée
+107,20157,Basketball,2025-11-29,78,,Polar Flow,Hebertdan
+108,20157,Basketball,2025-12-13,69,,Polar Flow,Schneider
+109,20157,Basketball,2026-01-04,65,,Apple Santé,Guillet
+110,20157,Basketball,2026-01-25,71,,Apple Santé,Saint Adrienne
+111,20157,Basketball,2026-02-11,69,,Suunto App,Maurice
+112,20157,Basketball,2026-03-08,89,,Garmin Connect,Renault-les-Bains
+113,20157,Basketball,2026-03-10,65,,Garmin Connect,Gomez
+114,20157,Basketball,2026-04-09,63,,Strava,Bruneau
+115,20157,Basketball,2026-04-15,64,,Suunto App,Lemaître
+116,20157,Basketball,2026-05-17,65,,Garmin Connect,NeveuVille
+117,20157,Basketball,2026-06-16,81,,Apple Santé,Caron
+118,20157,Basketball,2026-07-07,71,,Suunto App,Goncalves-la-Forêt
+119,20157,Basketball,2026-08-18,63,,Strava,Didier-les-Bains
+120,20157,Basketball,2026-08-25,90,,Suunto App,Meyer
+121,20697,Randonnée,2025-09-14,153,11.5,Strava,Bertin
+122,20697,Randonnée,2025-09-16,134,11.7,Polar Flow,MenardBourg
+123,20697,Randonnée,2025-11-18,146,8.8,Suunto App,Torres
+124,20697,Randonnée,2025-11-22,208,17.2,Strava,Saint Véronique
+125,20697,Randonnée,2025-11-25,111,14.3,Strava,Saint Madeleinedan
+126,20697,Randonnée,2025-12-11,122,17.4,Strava,Sainte Benoît
+127,20697,Randonnée,2026-01-14,133,11.6,Strava,Normandnec
+128,20697,Randonnée,2026-01-27,134,9.0,Garmin Connect,Guyot
+129,20697,Randonnée,2026-02-26,204,5.6,Polar Flow,Moulin-sur-Jourdan
+130,20697,Randonnée,2026-03-07,165,11.7,Suunto App,Saint Roger
+131,20697,Randonnée,2026-03-12,188,11.2,Polar Flow,Lombard
+132,20697,Randonnée,2026-03-19,229,5.7,Apple Santé,Devauxdan
+133,20697,Randonnée,2026-03-29,178,13.6,Apple Santé,Michel
+134,20697,Randonnée,2026-04-07,171,8.1,Suunto App,Pelletier-sur-Mer
+135,20697,Randonnée,2026-04-18,130,8.8,Garmin Connect,Joubert
+136,20697,Randonnée,2026-07-15,104,8.6,Garmin Connect,Gomez
+137,20697,Randonnée,2026-07-18,171,16.6,Polar Flow,Sainte Hélène
+138,20697,Randonnée,2026-07-31,234,15.0,Garmin Connect,Allard-la-Forêt
+139,20697,Randonnée,2026-08-19,134,5.1,Strava,Marion
+140,20697,Randonnée,2026-09-01,141,7.6,Strava,Saint Jacqueline
+141,20697,Randonnée,2026-09-06,146,13.7,Strava,Bonneau
+142,22426,Voile,2026-01-23,206,,Apple Santé,Weber-sur-Diaz
+143,22426,Voile,2026-02-12,240,,Apple Santé,Saint CharlotteVille
+144,23842,Voile,2025-09-19,189,,Suunto App,Poulain
+145,23842,Voile,2025-11-16,170,,Garmin Connect,Peron-sur-Charpentier
+146,23842,Voile,2026-02-20,137,,Suunto App,GrosBourg
+147,23842,Voile,2026-04-24,170,,Apple Santé,Dubois-sur-Mer
+148,25701,Runing,2025-09-10,32,6.5,Strava,Michel-sur-Langlois
+149,25701,Runing,2025-09-11,38,8.5,Garmin Connect,Seguin-sur-Letellier
+150,25701,Runing,2025-09-11,49,7.1,Polar Flow,Henry
+151,25701,Runing,2025-09-25,44,5.5,Polar Flow,Peltierboeuf
+152,25701,Runing,2025-10-04,29,9.1,Suunto App,Gautiernec
+153,25701,Runing,2025-10-04,48,11.2,Suunto App,Peron
+154,25701,Runing,2025-10-11,58,8.8,Suunto App,Nguyen-la-Forêt
+155,25701,Runing,2025-10-12,45,5.5,Suunto App,Hamel
+156,25701,Runing,2025-10-19,54,10.1,Suunto App,Vidal
+157,25701,Runing,2025-10-26,56,9.4,Apple Santé,Godard
+158,25701,Runing,2025-10-31,42,4.6,Garmin Connect,Saint Michellenec
+159,25701,Runing,2025-11-16,56,7.7,Suunto App,PonsVille
+160,25701,Runing,2025-11-28,30,7.5,Garmin Connect,Dupré
+161,25701,Runing,2025-11-28,48,9.6,Polar Flow,Benard
+162,25701,Runing,2025-12-02,54,8.3,Garmin Connect,Saint ThomasBourg
+163,25701,Runing,2025-12-25,59,6.4,Suunto App,Ramos
+164,25701,Runing,2025-12-31,48,8.1,Polar Flow,Paris
+165,25701,Runing,2026-01-04,58,8.4,Garmin Connect,Dumas
+166,25701,Runing,2026-01-21,27,8.2,Suunto App,Saint Henriette-la-Forêt
+167,25701,Runing,2026-01-28,55,11.5,Garmin Connect,Sainte Christiane
+168,25701,Runing,2026-02-19,32,10.6,Strava,Lombard-sur-Torres
+169,25701,Runing,2026-03-12,28,6.8,Polar Flow,Clément
+170,25701,Runing,2026-03-18,58,11.7,Apple Santé,Gilbert-sur-Schneider
+171,25701,Runing,2026-03-22,40,10.8,Polar Flow,Jean-sur-Diallo
+172,25701,Runing,2026-04-05,28,5.9,Garmin Connect,Peltier
+173,25701,Runing,2026-04-16,30,7.2,Polar Flow,Saint Adriennec
+174,25701,Runing,2026-04-16,43,11.8,Garmin Connect,Toussaint
+175,25701,Runing,2026-04-18,37,5.9,Garmin Connect,Da Costa
+176,25701,Runing,2026-04-19,53,11.4,Garmin Connect,Munoz
+177,25701,Runing,2026-04-28,34,4.2,Apple Santé,Bouvet-sur-Colas
+178,25701,Runing,2026-05-17,43,5.6,Apple Santé,Maillarddan
+179,25701,Runing,2026-07-01,53,4.5,Apple Santé,Deschamps-sur-Michel
+180,25701,Runing,2026-07-07,30,4.4,Polar Flow,Saint Charlotte
+181,25701,Runing,2026-07-12,58,11.4,Garmin Connect,Nguyen-sur-Bousquet
+182,25701,Runing,2026-07-21,56,11.4,Suunto App,Lebrun
+183,25701,Runing,2026-07-28,31,9.4,Suunto App,Dupré
+184,25701,Runing,2026-08-05,50,4.2,Apple Santé,Breton
+185,25701,Runing,2026-08-16,32,10.9,Strava,Pintonec
+186,25701,Runing,2026-08-21,28,9.8,Suunto App,Saint René
+187,25701,Runing,2026-08-26,60,8.4,Suunto App,Saint Louise-sur-Mer
+188,25701,Runing,2026-08-27,35,4.7,Suunto App,Saint ZoéBourg
+189,25701,Runing,2026-09-01,54,6.6,Apple Santé,Munoz-la-Forêt
+190,27069,Runing,2025-09-17,57,10.3,Suunto App,Sainte Aurélie
+191,27069,Runing,2025-10-25,30,8.9,Garmin Connect,Petitjean-les-Bains
+192,27069,Runing,2025-10-29,41,11.5,Suunto App,Mallet
+193,27069,Runing,2025-11-19,60,11.5,Garmin Connect,Pierre-les-Bains
+194,27069,Runing,2025-11-19,37,4.8,Apple Santé,Lebonnec
+195,27069,Runing,2025-12-17,50,9.5,Apple Santé,Guérin-sur-Lejeune
+196,27069,Runing,2026-01-29,27,10.7,Garmin Connect,Ledoux
+197,27069,Runing,2026-02-13,52,9.7,Suunto App,Grenier
+198,27069,Runing,2026-04-01,28,10.6,Garmin Connect,Martel
+199,27069,Runing,2026-05-09,27,4.7,Garmin Connect,Texier
+200,27069,Runing,2026-07-07,54,6.3,Polar Flow,Dupré-sur-Renard
+201,27069,Runing,2026-07-19,25,5.8,Suunto App,MunozBourg
+202,27069,Runing,2026-08-13,58,10.3,Suunto App,Jacquot
+203,27069,Runing,2026-08-19,44,10.6,Apple Santé,ChrétienBourg
+204,27069,Runing,2026-08-20,31,9.2,Apple Santé,Bouvet
+205,27483,Badminton,2025-09-09,73,,Suunto App,Delannoy
+206,27483,Badminton,2025-11-09,46,,Polar Flow,Sainte Hortense
+207,27483,Badminton,2025-11-13,55,,Polar Flow,Sainte Madeleinenec
+208,27483,Badminton,2025-11-27,73,,Suunto App,Sainte Laurenceboeuf
+209,27483,Badminton,2026-01-08,59,,Suunto App,Saint Sébastien
+210,27483,Badminton,2026-01-16,68,,Garmin Connect,Barredan
+211,27483,Badminton,2026-01-17,52,,Polar Flow,Coste
+212,27483,Badminton,2026-01-27,59,,Garmin Connect,Ramos
+213,27483,Badminton,2026-02-01,74,,Apple Santé,Auger-sur-Descamps
+214,27483,Badminton,2026-05-14,67,,Suunto App,Mailletboeuf
+215,27483,Badminton,2026-06-05,70,,Suunto App,Loiseau
+216,27483,Badminton,2026-08-15,51,,Apple Santé,Sainte Gilles-les-Bains
+217,27483,Badminton,2026-08-23,51,,Garmin Connect,Marin-sur-Roussel
+218,29450,Randonnée,2025-09-21,207,15.5,Apple Santé,Descamps-sur-Thomas
+219,29450,Randonnée,2025-10-01,174,15.9,Suunto App,Foucher
+220,29450,Randonnée,2025-10-30,235,8.9,Strava,Breton
+221,29450,Randonnée,2025-11-25,104,6.4,Strava,Adam-les-Bains
+222,29450,Randonnée,2025-12-17,151,11.4,Garmin Connect,Chevallier
+223,29450,Randonnée,2026-02-18,193,16.0,Garmin Connect,Sainte Claudinenec
+224,29450,Randonnée,2026-03-01,169,14.5,Strava,Blanchet
+225,29450,Randonnée,2026-03-10,141,12.5,Suunto App,Thibault
+226,29450,Randonnée,2026-03-26,198,17.5,Apple Santé,Lemoine-sur-Gay
+227,29450,Randonnée,2026-07-19,199,5.7,Apple Santé,Labbé-sur-Mer
+228,29450,Randonnée,2026-08-11,129,13.8,Polar Flow,Sainte Chantalnec
+229,29450,Randonnée,2026-09-01,223,10.0,Strava,GarnierVille
+230,29450,Randonnée,2026-09-02,110,12.3,Garmin Connect,Menard
+231,29793,Runing,2025-09-10,60,5.5,Garmin Connect,Collet-la-Forêt
+232,29793,Runing,2025-10-10,59,11.8,Polar Flow,Peron-les-Bains
+233,29793,Runing,2025-10-31,26,9.5,Strava,Chevallier-sur-Mer
+234,29793,Runing,2025-12-11,58,11.8,Garmin Connect,Carre-sur-Breton
+235,29793,Runing,2025-12-20,36,7.1,Suunto App,Perrin
+236,29793,Runing,2025-12-21,51,9.1,Polar Flow,Saint Victoire-les-Bains
+237,29793,Runing,2026-01-06,27,10.7,Polar Flow,Boutin-sur-Maury
+238,29793,Runing,2026-01-29,41,9.3,Polar Flow,Saint Marcdan
+239,29793,Runing,2026-01-31,30,4.5,Polar Flow,TessierVille
+240,29793,Runing,2026-02-04,42,4.8,Strava,Garnier
+241,29793,Runing,2026-02-17,38,5.1,Garmin Connect,Collin-sur-Mer
+242,29793,Runing,2026-03-13,31,9.8,Suunto App,Saint Sophie-les-Bains
+243,29793,Runing,2026-03-14,37,7.6,Garmin Connect,Bouvetnec
+244,29793,Runing,2026-03-20,60,9.3,Polar Flow,Pichon-sur-Benard
+245,29793,Runing,2026-04-23,45,9.9,Apple Santé,Salmonnec
+246,29793,Runing,2026-05-22,45,7.5,Polar Flow,Alves
+247,29793,Runing,2026-06-05,53,10.3,Strava,Godard
+248,29793,Runing,2026-07-01,26,7.0,Apple Santé,Sainte Matthieu
+249,29793,Runing,2026-07-02,38,4.8,Apple Santé,Gros-les-Bains
+250,29793,Runing,2026-07-12,31,11.5,Garmin Connect,Aubry
+251,29793,Runing,2026-08-21,48,7.5,Apple Santé,Sainte Hélène-sur-Mer
+252,30945,Runing,2025-11-04,55,4.6,Apple Santé,Grondin-sur-Robert
+253,30945,Runing,2025-11-07,33,8.5,Polar Flow,Sainte Olivie
+254,30945,Runing,2025-11-09,60,7.4,Polar Flow,Delaunay-sur-Mer
+255,30945,Runing,2025-11-21,35,10.4,Garmin Connect,Chevalier
+256,30945,Runing,2026-01-02,52,7.9,Apple Santé,Delahaye
+257,30945,Runing,2026-01-15,59,8.3,Strava,Dufour
+258,30945,Runing,2026-01-31,43,11.8,Suunto App,Bonnin
+259,30945,Runing,2026-03-08,56,9.3,Garmin Connect,Saint Julien
+260,30945,Runing,2026-04-02,31,8.2,Suunto App,Saint Éric
+261,30945,Runing,2026-05-08,34,11.3,Apple Santé,Langloisdan
+262,30945,Runing,2026-05-29,48,4.4,Strava,Lefèvre
+263,30945,Runing,2026-06-07,42,11.0,Suunto App,Olivier
+264,30945,Runing,2026-06-11,41,4.2,Garmin Connect,Piresdan
+265,30945,Runing,2026-06-23,55,8.5,Garmin Connect,Saint Philippe
+266,30945,Runing,2026-06-24,40,4.5,Strava,Chartier-sur-Mer
+267,30945,Runing,2026-06-24,55,8.5,Strava,Marie
+268,30945,Runing,2026-07-16,40,10.1,Garmin Connect,Mary
+269,30945,Runing,2026-07-28,32,7.1,Strava,Blot-sur-Ollivier
+270,30945,Runing,2026-08-04,34,5.3,Garmin Connect,Robinboeuf
+271,30945,Runing,2026-08-28,28,9.2,Polar Flow,Saint Claire-sur-Mer
+272,31222,Natation,2025-09-09,30,2.0,Polar Flow,Bouchet
+273,31222,Natation,2025-09-16,59,1.4,Strava,Guillet-sur-Fischer
+274,31222,Natation,2025-09-19,41,1.9,Strava,Chauveau
+275,31222,Natation,2025-09-23,53,1.5,Polar Flow,Saint Patrickdan
+276,31222,Natation,2025-11-09,50,0.7,Polar Flow,Langlois-sur-Raymond
+277,31222,Natation,2025-11-21,31,1.4,Suunto App,Peron-sur-Rémy
+278,31222,Natation,2026-02-01,43,1.3,Garmin Connect,Sainte Nathalie
+279,31222,Natation,2026-02-17,55,1.9,Suunto App,Roy-sur-Baudry
+280,31222,Natation,2026-03-10,31,1.3,Apple Santé,Perez-les-Bains
+281,31222,Natation,2026-03-14,46,1.3,Garmin Connect,Guyot-sur-Paris
+282,31222,Natation,2026-03-22,57,1.0,Strava,Roger-sur-Maury
+283,31222,Natation,2026-03-29,53,1.4,Garmin Connect,Bonnin
+284,31222,Natation,2026-04-11,37,0.7,Strava,Clément
+285,31222,Natation,2026-04-26,60,0.9,Suunto App,Piresnec
+286,31222,Natation,2026-05-15,37,1.9,Garmin Connect,Verdier
+287,31222,Natation,2026-05-28,53,1.9,Apple Santé,Saint Jacquesdan
+288,31222,Natation,2026-06-04,42,1.6,Polar Flow,Gillet
+289,31222,Natation,2026-06-20,51,1.3,Garmin Connect,GayVille
+290,31222,Natation,2026-07-09,39,1.7,Strava,Diazboeuf
+291,31222,Natation,2026-08-12,60,1.5,Apple Santé,Perrin
+292,31222,Natation,2026-08-13,38,2.0,Polar Flow,Dijoux
+293,32690,Badminton,2025-10-19,51,,Strava,Saint CarolineVille
+294,32690,Badminton,2025-11-15,52,,Strava,Navarro-sur-Mer
+295,32690,Badminton,2025-11-18,62,,Garmin Connect,Saint Constance
+296,32690,Badminton,2025-11-29,54,,Garmin Connect,Julien-sur-Verdier
+297,32690,Badminton,2026-04-30,64,,Apple Santé,Hernandez
+298,32690,Badminton,2026-06-06,73,,Garmin Connect,Louisnec
+299,32690,Badminton,2026-06-21,54,,Apple Santé,Saint Lorraine
+300,32690,Badminton,2026-07-21,66,,Suunto App,CostaVille
+301,33386,Randonnée,2025-11-15,146,18.0,Polar Flow,Girard-sur-Mer
+302,33386,Randonnée,2026-02-19,121,7.6,Polar Flow,Valentinboeuf
+303,33386,Randonnée,2026-04-02,203,16.9,Suunto App,Poirier-sur-Mer
+304,33386,Randonnée,2026-05-05,160,17.9,Garmin Connect,Besnard
+305,33386,Randonnée,2026-05-16,109,9.3,Apple Santé,Gimenez
+306,33386,Randonnée,2026-05-17,110,7.2,Suunto App,Munoz
+307,33386,Randonnée,2026-07-12,144,11.5,Apple Santé,Turpinnec
+308,33386,Randonnée,2026-07-19,105,11.6,Polar Flow,Sainte Christiane
+309,33386,Randonnée,2026-08-15,91,9.8,Suunto App,Tanguy-sur-Mer
+310,34382,Équitation,2025-10-25,80,,Garmin Connect,Labbé
+311,34382,Équitation,2025-11-22,88,,Apple Santé,Saint Gérard
+312,34382,Équitation,2026-02-01,61,,Strava,Godard-sur-Carlier
+313,34382,Équitation,2026-03-04,77,,Polar Flow,Sainte Marcboeuf
+314,34678,Randonnée,2025-09-17,171,15.9,Strava,Cohen
+315,34678,Randonnée,2025-11-01,92,8.3,Strava,Boucher
+316,34678,Randonnée,2025-11-14,117,5.4,Suunto App,Brunnec
+317,34678,Randonnée,2025-12-19,216,10.9,Suunto App,Sainte Simone-sur-Mer
+318,34678,Randonnée,2026-01-13,131,6.4,Apple Santé,Sainte Raymond
+319,34678,Randonnée,2026-05-21,116,10.2,Suunto App,Foucher
+320,34678,Randonnée,2026-07-01,109,6.4,Polar Flow,Guillet-sur-Fischer
+321,34678,Randonnée,2026-07-07,97,15.3,Polar Flow,BarbierVille
+322,34678,Randonnée,2026-07-23,115,8.2,Suunto App,Mace-la-Forêt
+323,34899,Football,2025-09-11,88,,Polar Flow,Berger-sur-Fournier
+324,34899,Football,2025-09-12,84,,Strava,Sainte Caroline-sur-Mer
+325,34899,Football,2025-10-16,81,,Apple Santé,Noëlnec
+326,34899,Football,2025-10-19,68,,Polar Flow,Laurent
+327,34899,Football,2025-12-19,89,,Polar Flow,Buisson
+328,34899,Football,2026-01-28,85,,Polar Flow,CoulonVille
+329,34899,Football,2026-02-04,69,,Garmin Connect,Buisson
+330,34899,Football,2026-03-29,62,,Strava,Leleu
+331,34899,Football,2026-04-03,77,,Polar Flow,Saint Marc
+332,34899,Football,2026-06-25,81,,Garmin Connect,Duval-sur-Mer
+333,34899,Football,2026-08-28,77,,Suunto App,Saint Andrédan
+334,34922,Tennis,2025-09-13,54,,Polar Flow,Laroche-sur-Duval
+335,34922,Tennis,2025-10-05,90,,Strava,AlbertBourg
+336,34922,Tennis,2025-11-13,51,,Polar Flow,Henry-sur-Guilbert
+337,34922,Tennis,2025-12-03,47,,Polar Flow,Saint LouiseBourg
+338,34922,Tennis,2025-12-05,58,,Apple Santé,Petitjean
+339,34922,Tennis,2025-12-07,63,,Suunto App,DidierBourg
+340,34922,Tennis,2026-01-07,52,,Garmin Connect,LegrosVille
+341,34922,Tennis,2026-01-08,54,,Apple Santé,Dos Santos
+342,34922,Tennis,2026-01-24,60,,Suunto App,Renault
+343,34922,Tennis,2026-02-04,77,,Garmin Connect,Sainte Alixnec
+344,34922,Tennis,2026-03-01,68,,Garmin Connect,Chrétien
+345,34922,Tennis,2026-03-13,78,,Suunto App,Dos Santos
+346,34922,Tennis,2026-03-28,72,,Suunto App,Albertboeuf
+347,34922,Tennis,2026-04-02,46,,Suunto App,Pires
+348,34922,Tennis,2026-04-07,45,,Polar Flow,Saint Yvesboeuf
+349,34922,Tennis,2026-04-15,70,,Garmin Connect,Bonnetnec
+350,34922,Tennis,2026-04-24,47,,Garmin Connect,Boyer-sur-Lefort
+351,34922,Tennis,2026-05-28,90,,Polar Flow,Humbert
+352,34922,Tennis,2026-06-07,70,,Polar Flow,Mace
+353,34922,Tennis,2026-08-22,65,,Apple Santé,Sainte Éléonore
+354,34922,Tennis,2026-08-22,84,,Garmin Connect,Cohen-sur-Mer
+355,34922,Tennis,2026-09-04,89,,Apple Santé,Diallo-sur-Mer
+356,34922,Tennis,2026-09-05,79,,Polar Flow,Gilles-sur-Pichon
+357,35731,Rugby,2025-12-19,105,,Strava,Leclerc
+358,35731,Rugby,2025-12-19,82,,Polar Flow,Clémentboeuf
+359,35731,Rugby,2026-01-06,87,,Polar Flow,Sainte Alphonse
+360,35731,Rugby,2026-01-25,85,,Suunto App,Legros
+361,35731,Rugby,2026-01-30,75,,Polar Flow,Weber
+362,35731,Rugby,2026-02-14,83,,Strava,Saint Élodie-les-Bains
+363,35731,Rugby,2026-03-08,84,,Garmin Connect,Adam
+364,35731,Rugby,2026-04-24,99,,Strava,Le Gall
+365,35731,Rugby,2026-05-09,105,,Suunto App,Lopez
+366,35731,Rugby,2026-05-15,94,,Apple Santé,Michel
+367,35731,Rugby,2026-07-21,97,,Strava,Perrier
+368,35731,Rugby,2026-08-28,78,,Apple Santé,Pasquier
+369,35731,Rugby,2026-09-04,103,,Apple Santé,Mallet
+370,36827,Tennis,2025-11-08,61,,Suunto App,Lebretonnec
+371,36827,Tennis,2025-12-16,72,,Apple Santé,Sainte Margot
+372,36827,Tennis,2026-03-03,52,,Polar Flow,Saint Olivie
+373,36827,Tennis,2026-03-11,82,,Strava,Sainte ConstanceBourg
+374,36827,Tennis,2026-05-20,63,,Apple Santé,Fernandez-sur-Carre
+375,36827,Tennis,2026-07-28,73,,Suunto App,PeltierVille
+376,36827,Tennis,2026-08-29,75,,Garmin Connect,Vasseur-les-Bains
+377,36981,Natation,2025-09-12,49,1.9,Apple Santé,Alexandre
+378,36981,Natation,2025-10-08,34,2.0,Strava,Guillot
+379,36981,Natation,2025-10-19,44,1.6,Garmin Connect,Pereira
+380,36981,Natation,2025-10-28,31,1.8,Suunto App,Leroux
+381,36981,Natation,2025-11-07,56,1.2,Garmin Connect,Buissondan
+382,36981,Natation,2025-11-22,45,1.3,Strava,Bodindan
+383,36981,Natation,2025-11-28,60,1.0,Apple Santé,Saint Roland
+384,36981,Natation,2025-12-07,45,2.0,Strava,Sainte Grégoire-la-Forêt
+385,36981,Natation,2025-12-12,53,1.4,Strava,Roux-sur-Mer
+386,36981,Natation,2025-12-20,41,1.8,Suunto App,Lebreton-la-Forêt
+387,36981,Natation,2026-01-13,56,1.2,Apple Santé,Poulain-les-Bains
+388,36981,Natation,2026-01-20,36,1.2,Strava,Saint Michèle
+389,36981,Natation,2026-02-06,40,1.8,Garmin Connect,Buisson-sur-Joly
+390,36981,Natation,2026-02-27,40,1.5,Polar Flow,Allain
+391,36981,Natation,2026-03-06,40,1.8,Polar Flow,Ollivier
+392,36981,Natation,2026-03-07,56,1.5,Strava,Guillon-la-Forêt
+393,36981,Natation,2026-03-19,55,0.5,Apple Santé,Verdier-sur-Dumas
+394,36981,Natation,2026-04-17,53,1.2,Polar Flow,Becker-sur-Gillet
+395,36981,Natation,2026-04-23,34,0.8,Strava,Moreau
+396,36981,Natation,2026-05-15,44,1.2,Suunto App,Bouchet
+397,36981,Natation,2026-05-20,46,1.9,Garmin Connect,Germaindan
+398,36981,Natation,2026-06-07,46,1.3,Suunto App,Le Goffboeuf
+399,36981,Natation,2026-06-11,51,1.9,Garmin Connect,Lopes
+400,36981,Natation,2026-06-13,47,2.0,Garmin Connect,Prévostdan
+401,36981,Natation,2026-07-04,41,1.3,Strava,Labbé-sur-Devaux
+402,36981,Natation,2026-07-22,42,1.2,Apple Santé,Sainte Michèle
+403,36981,Natation,2026-07-28,32,1.7,Apple Santé,Benoit-sur-Mer
+404,36981,Natation,2026-07-28,56,1.6,Apple Santé,Nicolas
+405,36981,Natation,2026-08-13,49,0.5,Polar Flow,Diaz
+406,36981,Natation,2026-08-20,37,0.6,Apple Santé,Roussel-les-Bains
+407,36981,Natation,2026-09-02,30,1.8,Suunto App,Gilles-sur-Mer
+408,37830,Randonnée,2025-10-18,108,17.0,Suunto App,Roussel-sur-Marques
+409,37830,Randonnée,2025-10-28,167,7.2,Suunto App,Delahayeboeuf
+410,37830,Randonnée,2025-12-16,134,14.0,Polar Flow,Hubert
+411,37830,Randonnée,2026-03-06,240,11.3,Apple Santé,Schmitt
+412,37830,Randonnée,2026-05-21,90,14.9,Polar Flow,Saint Josette
+413,37866,Natation,2025-09-19,53,1.1,Apple Santé,Peron
+414,37866,Natation,2025-09-23,41,1.9,Garmin Connect,Grenierdan
+415,37866,Natation,2025-09-26,51,0.8,Apple Santé,Bertrand
+416,37866,Natation,2025-10-26,50,0.6,Suunto App,Sainte Luc
+417,37866,Natation,2025-11-20,31,0.7,Apple Santé,Buisson
+418,37866,Natation,2025-11-28,42,1.5,Garmin Connect,Hamon
+419,37866,Natation,2025-12-05,57,0.7,Apple Santé,Alexandredan
+420,37866,Natation,2025-12-19,58,1.3,Suunto App,Tessier-la-Forêt
+421,37866,Natation,2025-12-24,39,0.8,Apple Santé,Schneider
+422,37866,Natation,2025-12-27,55,1.1,Suunto App,Arnaud-sur-Morvan
+423,37866,Natation,2026-01-06,44,1.9,Suunto App,Cohen
+424,37866,Natation,2026-02-11,37,1.7,Polar Flow,Saint Margaret
+425,37866,Natation,2026-02-12,31,1.3,Strava,Sainte Aimée-les-Bains
+426,37866,Natation,2026-02-13,60,0.9,Suunto App,Saint Daniel
+427,37866,Natation,2026-02-28,44,1.5,Strava,Dos Santos-sur-Laporte
+428,37866,Natation,2026-03-27,41,1.5,Garmin Connect,Saint Nathalie-les-Bains
+429,37866,Natation,2026-04-16,45,2.0,Polar Flow,Sainte Philippine-la-Forêt
+430,37866,Natation,2026-05-10,52,0.8,Apple Santé,BourgeoisBourg
+431,37866,Natation,2026-05-29,34,2.3,Suunto App,Sainte Margotboeuf
+432,37866,Natation,2026-06-13,52,1.4,Garmin Connect,Étienne
+433,37866,Natation,2026-06-26,46,2.1,Garmin Connect,Michelboeuf
+434,37866,Natation,2026-07-21,47,1.9,Strava,Sainte Anastasiedan
+435,37866,Natation,2026-08-02,46,2.0,Strava,Prévost
+436,37866,Natation,2026-08-18,50,1.6,Polar Flow,Rodriguez
+437,37866,Natation,2026-08-27,58,0.6,Polar Flow,Saint Diane
+438,37866,Natation,2026-09-03,34,1.1,Garmin Connect,Paul
+439,39874,Tennis,2025-09-18,65,,Apple Santé,Brunet
+440,39874,Tennis,2025-10-08,50,,Suunto App,Sainte Suzanne-les-Bains
+441,39874,Tennis,2025-10-10,88,,Suunto App,Saint VéroniqueBourg
+442,39874,Tennis,2025-10-24,80,,Strava,Guilbert-sur-Guilbert
+443,39874,Tennis,2025-11-06,66,,Strava,Monniernec
+444,39874,Tennis,2025-11-25,51,,Polar Flow,Lecomte-les-Bains
+445,39874,Tennis,2025-11-28,87,,Suunto App,Nicolas
+446,39874,Tennis,2025-11-29,48,,Apple Santé,Langlois-sur-Benard
+447,39874,Tennis,2025-12-07,67,,Polar Flow,Noël
+448,39874,Tennis,2025-12-19,62,,Polar Flow,Gilbert
+449,39874,Tennis,2026-03-29,80,,Polar Flow,Parent-sur-Weiss
+450,39874,Tennis,2026-04-16,80,,Strava,Descamps-sur-Lemonnier
+451,39874,Tennis,2026-04-26,62,,Strava,Maillard
+452,39874,Tennis,2026-04-30,89,,Apple Santé,Marty
+453,39874,Tennis,2026-05-09,45,,Garmin Connect,Moreno
+454,39874,Tennis,2026-06-11,87,,Suunto App,Saint NicoleVille
+455,39874,Tennis,2026-06-13,50,,Polar Flow,Mallet
+456,39874,Tennis,2026-09-02,71,,Suunto App,Barbier
+457,41293,Randonnée,2026-02-21,237,14.8,Apple Santé,Sainte Édouard
+458,41293,Randonnée,2026-04-25,104,10.8,Suunto App,Saint OcéaneVille
+459,41293,Randonnée,2026-05-02,187,9.8,Strava,Gimenez
+460,41293,Randonnée,2026-06-03,234,10.5,Garmin Connect,Girard
+461,41293,Randonnée,2026-07-04,190,17.8,Polar Flow,Robin-sur-Mer
+462,41293,Randonnée,2026-08-01,200,17.5,Garmin Connect,Marques
+463,41377,Football,2025-11-26,85,,Suunto App,Goncalves
+464,41377,Football,2025-12-25,85,,Suunto App,JolyBourg
+465,41377,Football,2026-03-08,64,,Garmin Connect,Ollivier
+466,41377,Football,2026-04-05,87,,Polar Flow,François
+467,41377,Football,2026-04-07,89,,Polar Flow,BlancVille
+468,41377,Football,2026-04-18,73,,Apple Santé,Rogerdan
+469,41377,Football,2026-05-07,82,,Polar Flow,Bourgeois
+470,41377,Football,2026-05-24,65,,Suunto App,Lenoir
+471,42472,Randonnée,2025-09-09,214,16.0,Garmin Connect,Chauvet-sur-Mer
+472,42472,Randonnée,2025-10-03,152,10.0,Suunto App,Pottier
+473,42472,Randonnée,2025-11-04,237,6.8,Suunto App,Poulainboeuf
+474,42472,Randonnée,2026-01-01,138,10.6,Strava,Roy
+475,42472,Randonnée,2026-02-24,179,17.5,Strava,Bourgeois
+476,42472,Randonnée,2026-03-06,185,17.7,Strava,Saint Patrick-les-Bains
+477,42472,Randonnée,2026-04-25,163,10.1,Apple Santé,GeorgesVille
+478,42472,Randonnée,2026-07-07,174,16.9,Garmin Connect,Morvan
+479,42472,Randonnée,2026-07-28,223,9.8,Polar Flow,Lemonnier
+480,42472,Randonnée,2026-08-21,94,14.9,Strava,Picard
+481,42960,Runing,2025-09-23,34,7.6,Apple Santé,Grégoire
+482,42960,Runing,2025-10-26,56,5.8,Polar Flow,Saint Daniellenec
+483,42960,Runing,2025-11-18,57,11.5,Suunto App,Lebrun
+484,42960,Runing,2026-01-07,48,11.8,Suunto App,Royernec
+485,42960,Runing,2026-01-30,27,7.3,Suunto App,Delaunay
+486,42960,Runing,2026-04-01,41,5.1,Strava,Hebert
+487,42960,Runing,2026-04-04,38,10.5,Polar Flow,Besson
+488,42960,Runing,2026-04-30,58,7.6,Strava,Blanchetboeuf
+489,42960,Runing,2026-07-03,52,11.6,Suunto App,Mahe
+490,42960,Runing,2026-07-12,45,10.3,Garmin Connect,Rey-la-Forêt
+491,42960,Runing,2026-07-31,42,5.2,Strava,Morel
+492,42960,Runing,2026-08-01,29,5.3,Polar Flow,MorvanBourg
+493,42960,Runing,2026-08-09,59,9.3,Apple Santé,Hernandez
+494,42960,Runing,2026-09-02,42,6.9,Apple Santé,Sainte Roland
+495,43124,Équitation,2025-10-23,84,,Suunto App,Guillou
+496,43124,Équitation,2025-12-25,68,,Strava,Pages
+497,43124,Équitation,2025-12-25,69,,Polar Flow,Delmas-sur-Camus
+498,43124,Équitation,2026-02-19,87,,Garmin Connect,Tanguydan
+499,43124,Équitation,2026-04-21,71,,Apple Santé,Ledouxnec
+500,43124,Équitation,2026-05-13,74,,Apple Santé,Rocher
+501,43124,Équitation,2026-07-10,67,,Polar Flow,Reynec
+502,43124,Équitation,2026-07-11,61,,Apple Santé,Munoznec
+503,43124,Équitation,2026-07-21,72,,Garmin Connect,Da Silva-les-Bains
+504,43124,Équitation,2026-08-18,76,,Polar Flow,Roussel
+505,43542,Judo,2025-09-25,83,,Strava,Sainte Alexandrie-la-Forêt
+506,43542,Judo,2025-10-08,64,,Suunto App,Clerc
+507,43542,Judo,2025-10-11,81,,Garmin Connect,Saint Juliette-les-Bains
+508,43542,Judo,2025-10-15,74,,Apple Santé,Techer
+509,43542,Judo,2025-11-14,83,,Garmin Connect,Chauvetdan
+510,43542,Judo,2025-11-29,87,,Garmin Connect,Saint GuillaumeBourg
+511,43542,Judo,2025-12-23,78,,Suunto App,Gilbert
+512,43542,Judo,2026-01-01,70,,Garmin Connect,Baron
+513,43542,Judo,2026-02-03,80,,Strava,Lenoir
+514,43542,Judo,2026-02-18,79,,Polar Flow,Jacquet-sur-Merle
+515,43542,Judo,2026-02-28,90,,Strava,Leclerc
+516,43542,Judo,2026-03-24,76,,Polar Flow,Rochenec
+517,43542,Judo,2026-04-25,69,,Strava,Costa
+518,43542,Judo,2026-05-09,72,,Strava,Didier
+519,43542,Judo,2026-05-17,80,,Polar Flow,Saint Agnèsboeuf
+520,43542,Judo,2026-06-02,77,,Garmin Connect,PiresBourg
+521,43542,Judo,2026-06-04,64,,Suunto App,De Oliveira-sur-Poulain
+522,43542,Judo,2026-07-07,60,,Polar Flow,Saint Rémy-sur-Mer
+523,43542,Judo,2026-08-20,61,,Strava,Guillou-la-Forêt
+524,44472,Football,2025-10-24,61,,Strava,Teixeira
+525,44472,Football,2025-12-07,63,,Strava,Tanguy
+526,44472,Football,2026-01-07,64,,Suunto App,Lemaîtrenec
+527,44472,Football,2026-02-27,78,,Garmin Connect,BègueBourg
+528,44472,Football,2026-05-15,86,,Suunto App,Cordier-sur-Guyot
+529,44472,Football,2026-05-29,61,,Apple Santé,Hebert
+530,44472,Football,2026-06-04,74,,Garmin Connect,Perrin
+531,44472,Football,2026-07-31,61,,Suunto App,Aubert
+532,44472,Football,2026-08-01,81,,Apple Santé,Imbertboeuf
+533,44472,Football,2026-08-25,90,,Strava,Robin-sur-Mer
+534,44927,Randonnée,2025-09-12,227,11.6,Strava,Rocher
+535,44927,Randonnée,2025-11-06,104,16.0,Garmin Connect,Saint Mathilde-les-Bains
+536,44927,Randonnée,2025-11-07,201,8.3,Strava,Ferreiradan
+537,44927,Randonnée,2025-12-27,92,13.0,Apple Santé,Blondel-la-Forêt
+538,44927,Randonnée,2026-03-03,132,7.8,Apple Santé,Saint Xaviernec
+539,44927,Randonnée,2026-03-13,159,6.3,Polar Flow,Sainte Cécileboeuf
+540,44927,Randonnée,2026-03-27,104,14.2,Apple Santé,Adam
+541,44927,Randonnée,2026-04-22,116,15.3,Garmin Connect,BernardVille
+542,44927,Randonnée,2026-05-20,93,5.8,Apple Santé,Gérard-les-Bains
+543,44927,Randonnée,2026-06-05,99,18.0,Suunto App,Lebrun
+544,44927,Randonnée,2026-07-29,153,16.5,Apple Santé,Sainte GeorgesVille
+545,44927,Randonnée,2026-09-05,135,17.8,Strava,Mullerdan
+546,45221,Randonnée,2025-10-18,164,10.9,Garmin Connect,Gaudin
+547,45221,Randonnée,2026-02-01,228,15.8,Strava,Guilbert
+548,45221,Randonnée,2026-02-13,212,14.7,Polar Flow,Briand
+549,45221,Randonnée,2026-02-18,93,6.3,Suunto App,Vincent
+550,45221,Randonnée,2026-08-21,104,9.3,Apple Santé,Rodrigues
+551,46253,Randonnée,2026-01-23,132,12.4,Apple Santé,Sainte Denis-les-Bains
+552,46253,Randonnée,2026-06-10,147,16.5,Strava,Garcia-la-Forêt
+553,46304,Rugby,2025-10-17,100,,Strava,Lemaire-sur-Mer
+554,46304,Rugby,2025-12-21,100,,Polar Flow,Potier-les-Bains
+555,46304,Rugby,2025-12-25,98,,Polar Flow,Guérin
+556,46304,Rugby,2026-04-05,76,,Garmin Connect,GuibertVille
+557,46304,Rugby,2026-07-21,90,,Polar Flow,Saint Martine
+558,46304,Rugby,2026-09-01,95,,Garmin Connect,Saint Louise
+559,46903,Escalade,2025-10-30,73,,Strava,Navarro
+560,46903,Escalade,2025-11-01,86,,Garmin Connect,Boulay
+561,46903,Escalade,2025-11-28,115,,Polar Flow,Lagardeboeuf
+562,46903,Escalade,2025-11-28,115,,Suunto App,Launay
+563,46903,Escalade,2025-12-06,85,,Strava,Guyon-sur-Gillet
+564,46903,Escalade,2025-12-11,106,,Apple Santé,RaymondVille
+565,46903,Escalade,2026-01-18,93,,Strava,PineauVille
+566,46903,Escalade,2026-03-26,116,,Garmin Connect,Tanguynec
+567,46903,Escalade,2026-05-26,107,,Strava,ChevallierVille
+568,46903,Escalade,2026-05-27,72,,Apple Santé,Chauvin-la-Forêt
+569,46903,Escalade,2026-06-09,109,,Apple Santé,Brunnec
+570,46903,Escalade,2026-06-13,78,,Polar Flow,Saint Célina
+571,46903,Escalade,2026-08-04,113,,Suunto App,Saint Jules-les-Bains
+572,46903,Escalade,2026-09-02,85,,Suunto App,Lebreton
+573,48260,Voile,2026-01-13,195,,Garmin Connect,PerrierBourg
+574,48260,Voile,2026-08-25,221,,Polar Flow,Didier
+575,49419,Natation,2025-09-18,44,1.8,Strava,Ferreira-la-Forêt
+576,49419,Natation,2025-10-10,32,2.1,Suunto App,Blondel
+577,49419,Natation,2025-10-10,47,1.3,Apple Santé,Sainte Margotboeuf
+578,49419,Natation,2025-10-28,58,1.5,Garmin Connect,Guyon
+579,49419,Natation,2025-10-28,37,1.3,Garmin Connect,Maurice
+580,49419,Natation,2025-11-01,32,0.5,Apple Santé,Carpentier
+581,49419,Natation,2025-11-05,41,2.3,Suunto App,Robert-sur-Salmon
+582,49419,Natation,2025-11-29,57,0.9,Suunto App,Legendre
+583,49419,Natation,2025-12-14,40,1.7,Garmin Connect,Guyotnec
+584,49419,Natation,2025-12-25,37,0.9,Suunto App,GimenezVille
+585,49419,Natation,2026-01-04,46,1.9,Garmin Connect,Mathieudan
+586,49419,Natation,2026-01-14,40,0.7,Garmin Connect,BlinBourg
+587,49419,Natation,2026-01-30,40,1.2,Polar Flow,Gomez
+588,49419,Natation,2026-02-04,38,1.5,Garmin Connect,Lamy-sur-Mer
+589,49419,Natation,2026-03-01,43,1.9,Suunto App,Lebreton
+590,49419,Natation,2026-03-06,35,2.1,Apple Santé,Berthelot
+591,49419,Natation,2026-03-11,43,1.2,Garmin Connect,Petit-les-Bains
+592,49419,Natation,2026-03-12,43,0.8,Polar Flow,Fouquetboeuf
+593,49419,Natation,2026-04-21,55,1.3,Polar Flow,Rousseau-sur-Chauvin
+594,49419,Natation,2026-06-16,33,2.1,Suunto App,Sainte Noémiboeuf
+595,49419,Natation,2026-06-17,38,1.6,Polar Flow,Barre
+596,49419,Natation,2026-07-04,48,1.2,Polar Flow,Beckerdan
+597,49419,Natation,2026-07-05,30,0.6,Polar Flow,Verdier
+598,49419,Natation,2026-07-12,58,1.8,Apple Santé,Lefort-les-Bains
+599,49419,Natation,2026-07-18,32,1.2,Apple Santé,Guibert
+600,49419,Natation,2026-07-19,57,1.4,Polar Flow,Lebon-sur-Guérin
+601,49419,Natation,2026-07-24,39,1.7,Suunto App,Hebert
+602,49419,Natation,2026-08-01,54,1.8,Polar Flow,Pasquier-les-Bains
+603,49419,Natation,2026-08-09,35,0.9,Apple Santé,Saint Jacquesnec
+604,49419,Natation,2026-08-28,33,0.6,Polar Flow,Saint Pénélope
+605,49419,Natation,2026-08-29,42,1.0,Garmin Connect,Sainte Thierry-sur-Mer
+606,49419,Natation,2026-08-29,37,1.7,Garmin Connect,Laine
+607,49419,Natation,2026-08-30,56,1.8,Apple Santé,Bigot-la-Forêt
+608,49571,Rugby,2025-10-21,104,,Suunto App,Lagarde
+609,49571,Rugby,2025-11-01,78,,Suunto App,Saint Margaret
+610,49571,Rugby,2025-12-14,92,,Strava,Laurent
+611,49571,Rugby,2026-01-21,87,,Polar Flow,Cohen
+612,49571,Rugby,2026-03-28,86,,Strava,Lefèvre
+613,49571,Rugby,2026-04-30,94,,Garmin Connect,Laine-sur-Louis
+614,49571,Rugby,2026-05-27,100,,Apple Santé,Simon
+615,49571,Rugby,2026-06-28,77,,Polar Flow,LabbéBourg
+616,49571,Rugby,2026-07-05,91,,Suunto App,Marin
+617,49571,Rugby,2026-07-21,104,,Apple Santé,Caronnec
+618,49571,Rugby,2026-07-24,85,,Polar Flow,Gros-sur-Lefèvre
+619,49571,Rugby,2026-09-04,86,,Suunto App,Richard
+620,49804,Runing,2025-09-18,39,9.8,Suunto App,Sainte Alfred
+621,49804,Runing,2025-09-27,54,9.7,Suunto App,Lebon-sur-Lacombe
+622,49804,Runing,2025-09-27,51,5.5,Strava,Picard
+623,49804,Runing,2025-10-07,50,5.4,Apple Santé,Louis
+624,49804,Runing,2025-10-10,54,9.5,Strava,Nguyen
+625,49804,Runing,2025-10-28,46,6.9,Strava,Gros-sur-Mer
+626,49804,Runing,2025-11-04,47,6.2,Strava,Boucher
+627,49804,Runing,2025-12-26,37,6.8,Strava,Leleu
+628,49804,Runing,2026-01-07,45,11.7,Suunto App,Lefort-la-Forêt
+629,49804,Runing,2026-01-08,48,5.8,Strava,Valentin-sur-Guillou
+630,49804,Runing,2026-01-09,42,4.5,Suunto App,MorelVille
+631,49804,Runing,2026-01-10,56,11.9,Polar Flow,Breton-sur-Techer
+632,49804,Runing,2026-01-22,49,4.6,Polar Flow,Lebrun
+633,49804,Runing,2026-02-04,55,6.7,Suunto App,Sainte MichèleBourg
+634,49804,Runing,2026-03-21,57,6.3,Suunto App,Hardy-les-Bains
+635,49804,Runing,2026-03-31,48,8.4,Suunto App,Potier
+636,49804,Runing,2026-04-01,43,6.4,Strava,Dupré-sur-Blanchard
+637,49804,Runing,2026-04-02,28,9.6,Strava,Potiernec
+638,49804,Runing,2026-04-11,47,10.2,Polar Flow,Sainte Gabriellenec
+639,49804,Runing,2026-05-14,46,5.7,Suunto App,ÉtienneVille
+640,49804,Runing,2026-06-06,48,6.3,Apple Santé,Olivier-sur-Mer
+641,49804,Runing,2026-06-09,33,5.3,Strava,PiresVille
+642,49804,Runing,2026-07-02,46,6.7,Garmin Connect,Arnaud
+643,49804,Runing,2026-07-10,35,11.5,Apple Santé,Hebert
+644,49804,Runing,2026-07-21,43,11.9,Garmin Connect,Lelièvre
+645,49804,Runing,2026-07-22,37,11.5,Apple Santé,Gaudinnec
+646,49804,Runing,2026-07-28,58,8.1,Garmin Connect,Lebreton
+647,49804,Runing,2026-07-29,35,6.4,Strava,GuichardBourg
+648,49804,Runing,2026-08-05,57,10.9,Garmin Connect,LévêqueVille
+649,49804,Runing,2026-08-12,51,10.8,Apple Santé,Collin
+650,49804,Runing,2026-08-18,30,7.3,Apple Santé,Sainte Sophie-les-Bains
+651,49804,Runing,2026-08-26,30,8.3,Garmin Connect,Petitjeannec
+652,49804,Runing,2026-08-29,33,8.7,Garmin Connect,PonsVille
+653,49804,Runing,2026-09-03,32,8.5,Strava,Saint Astrid
+654,50309,Runing,2025-09-24,32,8.8,Garmin Connect,Lucas
+655,50309,Runing,2025-10-07,60,7.3,Polar Flow,Sainte Éléonoreboeuf
+656,50309,Runing,2025-10-11,55,11.8,Polar Flow,Legros
+657,50309,Runing,2025-10-31,29,5.2,Polar Flow,Gérard-les-Bains
+658,50309,Runing,2025-11-15,45,11.1,Garmin Connect,Camus-sur-Robin
+659,50309,Runing,2026-01-06,57,4.6,Garmin Connect,Legrosdan
+660,50309,Runing,2026-01-13,28,11.7,Apple Santé,Sainte Pierre
+661,50309,Runing,2026-01-21,25,7.8,Strava,BarreBourg
+662,50309,Runing,2026-02-05,59,5.7,Strava,Lejeune
+663,50309,Runing,2026-03-06,36,6.7,Suunto App,Hoareaunec
+664,50309,Runing,2026-03-15,30,6.1,Garmin Connect,Carlier-les-Bains
+665,50309,Runing,2026-03-21,39,4.4,Suunto App,Lamynec
+666,50309,Runing,2026-07-22,39,11.6,Garmin Connect,Roche
+667,50504,Escalade,2025-09-20,62,,Suunto App,Pires
+668,50504,Escalade,2025-10-14,94,,Polar Flow,Saint Margaud
+669,50504,Escalade,2026-05-02,66,,Strava,Saint Arnaude
+670,50504,Escalade,2026-06-19,88,,Suunto App,Sainte Christelle-les-Bains
+671,50504,Escalade,2026-07-01,73,,Strava,De Oliveira
+672,50504,Escalade,2026-07-09,102,,Strava,Dupuy-les-Bains
+673,50504,Escalade,2026-07-17,86,,Strava,FouquetBourg
+674,50866,Randonnée,2025-09-13,173,17.8,Polar Flow,Chevallier-sur-Mer
+675,50866,Randonnée,2025-10-11,191,13.5,Suunto App,Imbert
+676,50866,Randonnée,2026-04-14,112,16.2,Polar Flow,Guilbert
+677,50955,Rugby,2026-03-25,100,,Apple Santé,Laine
+678,50955,Rugby,2026-07-01,100,,Polar Flow,MendèsBourg
+679,51866,Runing,2025-09-14,35,8.0,Suunto App,Saint Sylvie
+680,51866,Runing,2025-09-28,54,8.7,Strava,Maillard-la-Forêt
+681,51866,Runing,2025-09-30,49,7.6,Polar Flow,Lambert
+682,51866,Runing,2025-11-26,35,6.0,Suunto App,Saint Monique-la-Forêt
+683,51866,Runing,2026-01-07,45,7.5,Polar Flow,Durand
+684,51866,Runing,2026-01-09,52,9.6,Apple Santé,Maillard-sur-Mer
+685,51866,Runing,2026-01-16,33,4.7,Strava,Saint Antoinette
+686,51866,Runing,2026-01-23,60,11.4,Polar Flow,Saint ÉliseVille
+687,51866,Runing,2026-03-01,53,5.6,Polar Flow,Chevallier
+688,51866,Runing,2026-03-04,36,4.8,Apple Santé,Hebert
+689,51866,Runing,2026-03-04,25,4.5,Apple Santé,Robin
+690,51866,Runing,2026-03-13,44,7.6,Apple Santé,Fischer-sur-Mer
+691,51866,Runing,2026-03-17,25,10.2,Apple Santé,Charrier-sur-Teixeira
+692,51866,Runing,2026-03-17,35,7.7,Polar Flow,Moreno-sur-Roger
+693,51866,Runing,2026-03-20,29,6.3,Garmin Connect,Colas
+694,51866,Runing,2026-03-29,39,8.2,Strava,Bonneau-la-Forêt
+695,51866,Runing,2026-03-31,60,4.6,Strava,Lesage
+696,51866,Runing,2026-04-03,51,5.9,Polar Flow,Costaboeuf
+697,51866,Runing,2026-05-05,45,10.3,Apple Santé,Saint Nathalie-sur-Mer
+698,51866,Runing,2026-05-08,58,4.8,Apple Santé,Rossidan
+699,51866,Runing,2026-05-09,52,7.2,Garmin Connect,Langlois
+700,51866,Runing,2026-05-15,29,5.6,Suunto App,Sainte Zoé
+701,51866,Runing,2026-06-09,41,5.8,Garmin Connect,Vincent
+702,51866,Runing,2026-06-19,46,7.8,Polar Flow,Navarro-sur-Salmon
+703,51866,Runing,2026-06-25,31,11.2,Strava,Saint Alexandria
+704,51866,Runing,2026-07-26,45,5.1,Strava,Lefèvre-la-Forêt
+705,51866,Runing,2026-07-31,52,5.9,Strava,Roux-la-Forêt
+706,51866,Runing,2026-08-29,49,5.7,Garmin Connect,Delmas-sur-Ferrand
+707,51866,Runing,2026-09-01,25,10.6,Suunto App,Legendre-sur-Roussel
+708,51866,Runing,2026-09-04,46,4.7,Apple Santé,Olivier-sur-Nicolas
+709,53673,Voile,2026-08-01,201,,Suunto App,Berger-sur-Germain
+710,53944,Natation,2025-09-26,44,0.9,Suunto App,Saint Arnaude
+711,53944,Natation,2025-10-31,58,1.6,Suunto App,Ferrand-la-Forêt
+712,53944,Natation,2026-01-08,40,0.7,Polar Flow,Maillet
+713,53944,Natation,2026-01-08,33,1.0,Suunto App,Saint Jeandan
+714,53944,Natation,2026-01-24,44,1.7,Polar Flow,Baillyboeuf
+715,53944,Natation,2026-01-31,52,1.4,Strava,Dufour
+716,53944,Natation,2026-02-19,30,1.9,Garmin Connect,Saint Christine
+717,53944,Natation,2026-04-03,50,2.2,Polar Flow,Fernandez
+718,53944,Natation,2026-05-05,58,2.0,Suunto App,Lefebvredan
+719,53944,Natation,2026-05-09,39,1.8,Suunto App,Saint Jacques
+720,53944,Natation,2026-06-20,48,1.6,Suunto App,Sainte Alain
+721,55153,Boxe,2026-01-10,67,,Garmin Connect,Saint Daniellenec
+722,55153,Boxe,2026-01-17,70,,Apple Santé,BonneauVille
+723,55153,Boxe,2026-02-08,50,,Suunto App,Saint Valentine
+724,55153,Boxe,2026-04-24,49,,Suunto App,Gay-sur-Blanc
+725,55153,Boxe,2026-05-30,47,,Apple Santé,Lemaître
+726,55153,Boxe,2026-07-02,47,,Polar Flow,Sainte Andrée
+727,56263,Boxe,2025-09-17,64,,Apple Santé,Saint FrédériqueVille
+728,56263,Boxe,2025-10-16,46,,Apple Santé,Georges
+729,56263,Boxe,2025-11-12,74,,Apple Santé,Leconte-sur-Joseph
+730,56263,Boxe,2025-12-12,67,,Strava,Sainte Corinne
+731,56263,Boxe,2026-01-16,64,,Suunto App,Delaunay
+732,56263,Boxe,2026-01-20,66,,Apple Santé,Vaillant
+733,56263,Boxe,2026-02-19,46,,Polar Flow,Bertin
+734,56263,Boxe,2026-05-17,50,,Polar Flow,Maillotdan
+735,56263,Boxe,2026-07-19,49,,Strava,Lacombe
+736,56263,Boxe,2026-08-06,61,,Suunto App,Bertin
+737,56263,Boxe,2026-08-12,48,,Apple Santé,Saint Colette
+738,56263,Boxe,2026-08-20,72,,Apple Santé,Perret
+739,56263,Boxe,2026-08-27,54,,Apple Santé,Samson-sur-Aubry
+740,56482,Tennis,2025-09-16,72,,Apple Santé,Meyer
+741,56482,Tennis,2025-09-19,82,,Apple Santé,Saint Marthe
+742,56482,Tennis,2025-10-15,58,,Apple Santé,Saint AlexBourg
+743,56482,Tennis,2025-10-22,67,,Apple Santé,Aubry-sur-Bertrand
+744,56482,Tennis,2025-11-01,74,,Polar Flow,Sainte Édouard-la-Forêt
+745,56482,Tennis,2025-11-01,85,,Polar Flow,Verdier
+746,56482,Tennis,2026-01-25,57,,Strava,Saint Pénélope
+747,56482,Tennis,2026-03-10,63,,Strava,Roussel
+748,56482,Tennis,2026-03-10,55,,Apple Santé,Lacroix
+749,56482,Tennis,2026-03-12,69,,Apple Santé,Bousquetboeuf
+750,56482,Tennis,2026-04-29,87,,Apple Santé,Saint Élisabeth-sur-Mer
+751,56482,Tennis,2026-06-09,88,,Apple Santé,Saint Valentine
+752,56482,Tennis,2026-06-10,47,,Apple Santé,RoyerBourg
+753,56482,Tennis,2026-06-12,55,,Suunto App,Dupuy-sur-Mer
+754,56482,Tennis,2026-06-26,58,,Polar Flow,Lecomte
+755,56482,Tennis,2026-08-07,86,,Suunto App,Weissdan
+756,56482,Tennis,2026-09-02,54,,Apple Santé,Hoarau
+757,56530,Runing,2025-09-10,54,8.6,Strava,Saint Augustin-la-Forêt
+758,56530,Runing,2025-09-18,35,9.9,Suunto App,Royer-sur-Peron
+759,56530,Runing,2025-09-19,30,9.2,Strava,Alexandredan
+760,56530,Runing,2025-09-20,48,9.2,Strava,Saint Margaud
+761,56530,Runing,2025-10-11,42,11.7,Garmin Connect,Saint MartheVille
+762,56530,Runing,2025-11-01,35,10.8,Suunto App,Potier-sur-Navarro
+763,56530,Runing,2025-12-21,36,10.8,Polar Flow,Saint Christine
+764,56530,Runing,2025-12-25,56,10.6,Strava,Sainte Marcelleboeuf
+765,56530,Runing,2025-12-25,25,8.0,Apple Santé,BarbeBourg
+766,56530,Runing,2025-12-30,52,7.5,Suunto App,Pascal
+767,56530,Runing,2026-01-09,28,6.8,Suunto App,GaillardBourg
+768,56530,Runing,2026-01-18,56,7.3,Apple Santé,Saint Emmanuelle
+769,56530,Runing,2026-02-07,49,7.1,Suunto App,Baudrydan
+770,56530,Runing,2026-02-19,30,11.4,Strava,ValletVille
+771,56530,Runing,2026-02-25,31,10.6,Polar Flow,MartinBourg
+772,56530,Runing,2026-03-03,44,7.7,Suunto App,Marchal
+773,56530,Runing,2026-04-14,28,11.5,Polar Flow,Brunel-sur-Reynaud
+774,56530,Runing,2026-06-16,48,11.1,Garmin Connect,Sainte Adrienne
+775,56530,Runing,2026-07-03,43,9.8,Strava,Saint Clémence
+776,56530,Runing,2026-07-09,33,10.3,Polar Flow,Roche
+777,56530,Runing,2026-07-18,51,5.7,Suunto App,Bodin-sur-Lucas
+778,56530,Runing,2026-07-19,32,7.8,Garmin Connect,Nicolas
+779,56530,Runing,2026-07-21,56,4.8,Suunto App,Guillet-sur-Grégoire
+780,56530,Runing,2026-08-08,36,6.9,Garmin Connect,Sainte Margauxboeuf
+781,56530,Runing,2026-08-09,57,10.4,Apple Santé,Le Goff-la-Forêt
+782,56530,Runing,2026-09-04,53,6.7,Polar Flow,Ribeiroboeuf
+783,56632,Voile,2026-04-19,187,,Suunto App,Saint Anouk
+784,56632,Voile,2026-05-21,231,,Garmin Connect,Sainte Sabine-la-Forêt
+785,57589,Runing,2025-09-27,42,11.4,Garmin Connect,Bourdon
+786,57589,Runing,2025-11-14,27,6.7,Polar Flow,Sainte Adèlenec
+787,57589,Runing,2025-11-27,25,7.2,Strava,Gauthierboeuf
+788,57589,Runing,2025-12-02,59,7.5,Garmin Connect,Vincent
+789,57589,Runing,2025-12-14,37,6.9,Suunto App,Schmitt-les-Bains
+790,57589,Runing,2025-12-16,27,9.4,Garmin Connect,Deschampsboeuf
+791,57589,Runing,2026-04-21,54,5.0,Polar Flow,Barbier
+792,57589,Runing,2026-05-16,51,9.4,Strava,Dumas
+793,57589,Runing,2026-05-17,26,6.0,Garmin Connect,Allainboeuf
+794,57589,Runing,2026-05-29,31,10.3,Suunto App,Legrand
+795,57589,Runing,2026-06-24,55,11.2,Garmin Connect,De Sousa-sur-Colin
+796,57589,Runing,2026-06-27,49,6.5,Garmin Connect,Dupuy
+797,57589,Runing,2026-07-11,37,6.3,Polar Flow,Sainte Grégoire
+798,57589,Runing,2026-07-23,32,11.6,Garmin Connect,Vasseur
+799,57589,Runing,2026-08-11,43,6.9,Polar Flow,Fernandez
+800,57589,Runing,2026-09-01,51,11.9,Garmin Connect,Reynaud-sur-Pinto
+801,59040,Judo,2025-09-12,66,,Garmin Connect,Saint Jules
+802,59040,Judo,2025-10-09,61,,Suunto App,Goncalves
+803,59040,Judo,2025-11-25,82,,Suunto App,Ferreiradan
+804,59040,Judo,2025-12-13,61,,Suunto App,Lacombe
+805,59040,Judo,2026-01-01,77,,Suunto App,TeixeiraBourg
+806,59040,Judo,2026-01-11,87,,Garmin Connect,Sainte Éric-sur-Mer
+807,59040,Judo,2026-05-01,87,,Apple Santé,Roy
+808,59040,Judo,2026-07-26,83,,Polar Flow,Thibault
+809,59040,Judo,2026-08-07,88,,Polar Flow,Guillon
+810,59040,Judo,2026-08-27,60,,Polar Flow,Arnaud-sur-Delattre
+811,60358,Natation,2025-09-23,42,0.9,Garmin Connect,Jourdan
+812,60358,Natation,2025-09-28,37,0.9,Suunto App,LefebvreVille
+813,60358,Natation,2025-09-30,49,1.7,Suunto App,Jacques
+814,60358,Natation,2025-10-05,45,0.6,Strava,Fleury
+815,60358,Natation,2025-10-08,38,1.5,Polar Flow,Chauvin-sur-Mary
+816,60358,Natation,2025-10-25,33,1.8,Polar Flow,Carre-sur-Léger
+817,60358,Natation,2025-10-29,40,1.9,Apple Santé,Gérard
+818,60358,Natation,2025-11-02,51,1.8,Apple Santé,Riou
+819,60358,Natation,2025-11-06,46,2.1,Polar Flow,Peltierboeuf
+820,60358,Natation,2025-11-30,51,0.7,Suunto App,Poirier
+821,60358,Natation,2025-12-13,59,1.7,Strava,Neveu-sur-Masse
+822,60358,Natation,2025-12-17,56,1.4,Polar Flow,Leconteboeuf
+823,60358,Natation,2026-01-10,46,0.9,Polar Flow,Cousin
+824,60358,Natation,2026-01-23,33,1.0,Apple Santé,Ledoux-les-Bains
+825,60358,Natation,2026-01-27,53,1.5,Apple Santé,Mary
+826,60358,Natation,2026-01-30,60,1.1,Garmin Connect,Hubert
+827,60358,Natation,2026-02-17,39,0.6,Strava,Blin-sur-Legendre
+828,60358,Natation,2026-02-26,32,0.7,Strava,Laporte-la-Forêt
+829,60358,Natation,2026-03-06,43,2.5,Apple Santé,Colasdan
+830,60358,Natation,2026-03-11,34,0.8,Strava,Le Roux-les-Bains
+831,60358,Natation,2026-03-22,40,0.6,Apple Santé,Samson
+832,60358,Natation,2026-05-21,43,1.6,Suunto App,ThomasVille
+833,60358,Natation,2026-05-22,54,0.5,Strava,Bonneau
+834,60358,Natation,2026-05-26,47,1.2,Apple Santé,AubertVille
+835,60358,Natation,2026-06-28,51,1.9,Apple Santé,Dumont
+836,60358,Natation,2026-08-15,33,1.3,Strava,Sainte Stéphane
+837,60358,Natation,2026-08-15,44,2.0,Garmin Connect,Camus
+838,60358,Natation,2026-08-19,41,0.7,Strava,Hubert
+839,60948,Runing,2025-10-07,48,11.9,Polar Flow,Ledouxboeuf
+840,60948,Runing,2025-11-07,36,8.8,Strava,Rodriguez
+841,60948,Runing,2025-11-13,34,7.1,Garmin Connect,Chevalier
+842,60948,Runing,2025-11-20,52,5.2,Suunto App,Dupont-sur-Mer
+843,60948,Runing,2025-11-27,31,4.7,Strava,Bertrand
+844,60948,Runing,2025-12-28,29,5.0,Strava,Saint Jacqueline-sur-Mer
+845,60948,Runing,2026-01-06,36,9.9,Garmin Connect,Delorme
+846,60948,Runing,2026-01-13,47,6.9,Polar Flow,Guillot-sur-Bodin
+847,60948,Runing,2026-01-14,29,4.7,Garmin Connect,Carre
+848,60948,Runing,2026-01-21,35,4.8,Apple Santé,Gonzalez-sur-Besnard
+849,60948,Runing,2026-02-22,31,9.4,Suunto App,Buisson
+850,60948,Runing,2026-03-13,39,5.5,Strava,Masson-les-Bains
+851,60948,Runing,2026-04-04,56,9.5,Polar Flow,Saint Victor
+852,60948,Runing,2026-04-10,56,10.4,Suunto App,Guyon-sur-Langlois
+853,60948,Runing,2026-05-01,53,10.5,Suunto App,Muller
+854,60948,Runing,2026-05-08,55,9.8,Suunto App,Sainte BrigitteBourg
+855,60948,Runing,2026-05-09,32,10.4,Polar Flow,Saint Christopheboeuf
+856,60948,Runing,2026-05-12,37,7.6,Suunto App,Saint Virginienec
+857,60948,Runing,2026-05-21,56,9.0,Suunto App,Ollivier
+858,60948,Runing,2026-06-23,50,8.2,Suunto App,Saint Philippedan
+859,60948,Runing,2026-07-18,56,6.5,Strava,Saint Colette
+860,60948,Runing,2026-08-09,26,10.6,Apple Santé,Bailly
+861,60948,Runing,2026-08-20,31,5.4,Apple Santé,Marin-la-Forêt
+862,60948,Runing,2026-08-26,59,5.0,Strava,Lemairenec
+863,66386,Badminton,2025-09-21,75,,Garmin Connect,PelletierVille
+864,66386,Badminton,2025-10-03,53,,Apple Santé,Dupont
+865,66386,Badminton,2025-10-04,52,,Suunto App,Andre
+866,66386,Badminton,2025-10-21,66,,Garmin Connect,Alvesnec
+867,66386,Badminton,2025-10-24,60,,Suunto App,Saint Manon
+868,66386,Badminton,2025-11-27,55,,Strava,Couturier-la-Forêt
+869,66386,Badminton,2025-12-03,71,,Apple Santé,Devaux-sur-Colas
+870,66386,Badminton,2026-04-19,50,,Suunto App,PoulainBourg
+871,66386,Badminton,2026-07-03,61,,Apple Santé,Hubertnec
+872,66882,Judo,2025-09-26,66,,Garmin Connect,Poirier-sur-Julien
+873,66882,Judo,2025-10-01,89,,Strava,Sainte Frédériquenec
+874,66882,Judo,2025-10-08,77,,Apple Santé,Dijoux
+875,66882,Judo,2025-10-16,74,,Strava,Coste-sur-Barbe
+876,66882,Judo,2025-10-19,85,,Suunto App,Sainte Henri-les-Bains
+877,66882,Judo,2025-10-21,78,,Polar Flow,Thierry-sur-Roussel
+878,66882,Judo,2025-12-12,89,,Strava,Valette-sur-Roussel
+879,66882,Judo,2026-02-06,85,,Apple Santé,Barrenec
+880,66882,Judo,2026-04-03,68,,Suunto App,Massedan
+881,66882,Judo,2026-04-05,61,,Garmin Connect,Antoine
+882,66882,Judo,2026-06-02,64,,Polar Flow,Bazin-sur-Lemonnier
+883,66882,Judo,2026-06-07,72,,Strava,Rémy-sur-Mer
+884,66882,Judo,2026-06-18,61,,Suunto App,Guichard
+885,66882,Judo,2026-06-28,60,,Apple Santé,Langlois
+886,66882,Judo,2026-07-01,68,,Suunto App,Saint Grégoire-la-Forêt
+887,66882,Judo,2026-07-08,83,,Suunto App,Royer
+888,66882,Judo,2026-07-08,83,,Suunto App,Imbert-sur-Blanc
+889,66882,Judo,2026-07-21,66,,Suunto App,Cordier
+890,66882,Judo,2026-07-28,83,,Suunto App,BessonVille
+891,66882,Judo,2026-08-29,76,,Garmin Connect,Sainte Mathildenec
+892,67121,Rugby,2025-12-10,83,,Garmin Connect,Saint MargueriteVille
+893,67121,Rugby,2026-02-22,102,,Polar Flow,ImbertBourg
+894,67121,Rugby,2026-03-15,84,,Strava,Perrin
+895,67121,Rugby,2026-06-09,81,,Polar Flow,Rémyboeuf
+896,67121,Rugby,2026-07-01,79,,Garmin Connect,Sainte LaureBourg
+897,67121,Rugby,2026-08-21,103,,Garmin Connect,Vallée
+898,69938,Randonnée,2025-10-21,107,15.5,Apple Santé,Saint Stéphanenec
+899,69938,Randonnée,2026-01-07,149,13.2,Apple Santé,GodardBourg
+900,69938,Randonnée,2026-01-17,137,13.8,Polar Flow,Saint Paul
+901,69938,Randonnée,2026-01-21,225,10.6,Suunto App,Moreau
+902,69938,Randonnée,2026-08-20,178,10.9,Apple Santé,Charrier
+903,69938,Randonnée,2026-08-30,160,5.5,Suunto App,Sainte Maurice
+904,70575,Randonnée,2025-10-31,90,6.5,Polar Flow,BourgeoisBourg
+905,70575,Randonnée,2025-12-03,96,7.5,Strava,Ferreira-la-Forêt
+906,70575,Randonnée,2025-12-09,191,12.9,Apple Santé,Sainte Julienboeuf
+907,70575,Randonnée,2025-12-18,187,7.5,Strava,Besnard
+908,70575,Randonnée,2026-03-13,209,8.4,Polar Flow,Saint Odette
+909,70575,Randonnée,2026-06-11,114,15.4,Polar Flow,Boulay-sur-Mer
+910,70575,Randonnée,2026-07-21,231,11.8,Suunto App,Torresdan
+911,70933,Tennis,2025-10-14,66,,Suunto App,Payet-sur-Mer
+912,70933,Tennis,2025-11-30,86,,Garmin Connect,Allard-sur-Pottier
+913,70933,Tennis,2026-01-02,57,,Garmin Connect,Lagarde
+914,70933,Tennis,2026-03-31,90,,Polar Flow,Perret
+915,70933,Tennis,2026-04-23,54,,Polar Flow,Prévost
+916,70933,Tennis,2026-05-24,49,,Polar Flow,FouquetBourg
+917,70933,Tennis,2026-05-29,56,,Apple Santé,Petitjean
+918,70933,Tennis,2026-05-29,46,,Apple Santé,Bouchet-la-Forêt
+919,70933,Tennis,2026-07-29,73,,Apple Santé,Merle
+920,70933,Tennis,2026-08-05,57,,Strava,Gonzalez
+921,70933,Tennis,2026-08-11,46,,Polar Flow,Da Costa-sur-Seguin
+922,70933,Tennis,2026-08-30,81,,Polar Flow,Godard
+923,70933,Tennis,2026-09-06,59,,Garmin Connect,Sainte Édouard
+924,71190,Badminton,2025-11-09,53,,Garmin Connect,Paris-les-Bains
+925,71190,Badminton,2026-05-24,65,,Apple Santé,Joubert-sur-Morin
+926,73367,Boxe,2025-09-09,60,,Polar Flow,Vasseur-sur-Andre
+927,73367,Boxe,2025-10-08,70,,Garmin Connect,Marquesnec
+928,73367,Boxe,2025-10-18,55,,Strava,Morvan-sur-Dos Santos
+929,73367,Boxe,2025-12-04,55,,Garmin Connect,Saint Xavier
+930,73367,Boxe,2026-01-07,47,,Strava,Blanchard
+931,73367,Boxe,2026-01-09,69,,Suunto App,Grenier
+932,73367,Boxe,2026-01-17,56,,Polar Flow,Navarro
+933,73367,Boxe,2026-06-09,52,,Polar Flow,Saint Eugène
+934,75791,Runing,2025-09-11,32,11.6,Garmin Connect,Renard-sur-Jourdan
+935,75791,Runing,2025-11-23,51,7.0,Garmin Connect,Allain-sur-Renard
+936,75791,Runing,2025-12-18,33,4.8,Garmin Connect,Saint Raymond
+937,75791,Runing,2026-02-05,36,10.6,Polar Flow,Sainte Émile
+938,75791,Runing,2026-02-13,38,11.6,Garmin Connect,Bouchet
+939,75791,Runing,2026-02-20,34,6.5,Garmin Connect,De Sousa
+940,75791,Runing,2026-03-03,29,10.6,Garmin Connect,Saint Lucnec
+941,75791,Runing,2026-03-17,34,5.5,Polar Flow,Morel-sur-Rossi
+942,75791,Runing,2026-03-17,57,5.8,Garmin Connect,Gimenez-sur-Martin
+943,75791,Runing,2026-04-08,55,10.2,Suunto App,Adam
+944,75791,Runing,2026-04-10,52,10.4,Strava,Gilbert-sur-Mer
+945,75791,Runing,2026-04-22,55,7.5,Polar Flow,Lejeune-la-Forêt
+946,75791,Runing,2026-05-07,37,4.9,Polar Flow,Saint Alexandria-sur-Mer
+947,75791,Runing,2026-06-06,45,9.2,Garmin Connect,Gilles-la-Forêt
+948,75791,Runing,2026-06-09,41,10.6,Apple Santé,Baron-sur-Bazin
+949,75791,Runing,2026-08-05,50,8.0,Polar Flow,Colinboeuf
+950,75791,Runing,2026-08-15,60,11.3,Apple Santé,Barre-sur-Becker
+951,76076,Football,2025-10-09,60,,Apple Santé,Louis
+952,76076,Football,2025-10-31,82,,Suunto App,Alves
+953,76076,Football,2025-11-05,64,,Apple Santé,Pintodan
+954,76076,Football,2026-01-09,71,,Apple Santé,CourtoisBourg
+955,76076,Football,2026-02-06,65,,Polar Flow,Sainte Valérie-les-Bains
+956,76076,Football,2026-03-12,88,,Polar Flow,Charles
+957,76076,Football,2026-06-03,83,,Strava,Saint ClaudeVille
+958,76076,Football,2026-08-27,86,,Polar Flow,Lebon-sur-Lecoq
+959,76341,Football,2025-11-23,67,,Apple Santé,Letellier
+960,76341,Football,2026-01-23,62,,Suunto App,Saint Capucine-les-Bains
+961,76341,Football,2026-02-15,82,,Apple Santé,Saint Victor
+962,76341,Football,2026-02-26,85,,Strava,Pelletier
+963,76341,Football,2026-04-03,71,,Suunto App,Moulin
+964,76341,Football,2026-08-21,76,,Suunto App,Normand-sur-Arnaud
+965,76903,Basketball,2025-09-21,84,,Garmin Connect,Samson-sur-Mer
+966,76903,Basketball,2025-10-11,64,,Strava,Laurent-sur-Mer
+967,76903,Basketball,2025-11-12,77,,Apple Santé,Sainte Adrien
+968,76903,Basketball,2025-11-25,84,,Suunto App,Duval
+969,76903,Basketball,2025-12-04,66,,Polar Flow,Humbert
+970,76903,Basketball,2025-12-25,75,,Strava,Mendès
+971,76903,Basketball,2026-02-04,68,,Strava,Saint Camille
+972,76903,Basketball,2026-02-28,76,,Suunto App,Albert
+973,76903,Basketball,2026-04-04,83,,Strava,Gauthier-sur-Bodin
+974,76903,Basketball,2026-04-22,64,,Suunto App,Saint Bernadette-les-Bains
+975,76903,Basketball,2026-05-14,67,,Apple Santé,Gomes
+976,76903,Basketball,2026-07-19,89,,Suunto App,Prévost
+977,76903,Basketball,2026-07-26,74,,Apple Santé,Sanchez
+978,78962,Boxe,2025-09-11,46,,Suunto App,DelannoyBourg
+979,78962,Boxe,2025-09-16,45,,Apple Santé,Saint Xavier
+980,78962,Boxe,2025-09-24,59,,Strava,Sainte Alphonse-la-Forêt
+981,78962,Boxe,2025-09-30,65,,Garmin Connect,Bourgeois
+982,78962,Boxe,2025-10-10,51,,Apple Santé,Rossi
+983,78962,Boxe,2025-10-11,55,,Suunto App,Sainte Henri-les-Bains
+984,78962,Boxe,2025-10-26,53,,Strava,Saint Lucas
+985,78962,Boxe,2025-10-28,62,,Apple Santé,Julien-la-Forêt
+986,78962,Boxe,2025-11-13,49,,Apple Santé,Moulin-sur-Picard
+987,78962,Boxe,2025-11-20,47,,Apple Santé,Maillot-sur-Gimenez
+988,78962,Boxe,2026-01-18,59,,Strava,Leroy
+989,78962,Boxe,2026-02-11,60,,Strava,Sainte BernardBourg
+990,78962,Boxe,2026-03-11,58,,Suunto App,Fischer
+991,78962,Boxe,2026-03-21,64,,Polar Flow,Chauvetboeuf
+992,78962,Boxe,2026-03-31,54,,Apple Santé,Delannoy
+993,78962,Boxe,2026-06-28,69,,Polar Flow,Sainte Hélène-les-Bains
+994,78962,Boxe,2026-07-03,47,,Suunto App,Sainte Thierrydan
+995,78962,Boxe,2026-08-23,60,,Garmin Connect,Meunier
+996,78962,Boxe,2026-09-02,72,,Polar Flow,Marchal
+997,81676,Tennis,2025-09-19,51,,Polar Flow,Picard-sur-Deschamps
+998,81676,Tennis,2025-09-19,51,,Polar Flow,Lefort
+999,81676,Tennis,2025-10-26,89,,Suunto App,Le Roux
+1000,81676,Tennis,2025-11-20,56,,Apple Santé,Mercierboeuf
+1001,81676,Tennis,2026-01-29,46,,Polar Flow,Pons-sur-Weber
+1002,81676,Tennis,2026-02-25,77,,Garmin Connect,CosteVille
+1003,81676,Tennis,2026-03-03,59,,Strava,Thierry-sur-Denis
+1004,81676,Tennis,2026-03-18,64,,Garmin Connect,Boulay-sur-Mer
+1005,81676,Tennis,2026-04-07,84,,Strava,Saint Alix
+1006,81676,Tennis,2026-04-17,76,,Apple Santé,Fernandes
+1007,81676,Tennis,2026-04-21,69,,Garmin Connect,Saint Monique
+1008,81676,Tennis,2026-04-29,83,,Suunto App,Lucas
+1009,81676,Tennis,2026-05-06,62,,Apple Santé,Sainte Madeleine
+1010,81676,Tennis,2026-06-10,66,,Apple Santé,Leclerc
+1011,81676,Tennis,2026-06-12,63,,Strava,Peron
+1012,81676,Tennis,2026-06-19,79,,Strava,Torres
+1013,81676,Tennis,2026-06-30,89,,Garmin Connect,Weber-sur-Dijoux
+1014,81676,Tennis,2026-07-12,65,,Garmin Connect,LombardVille
+1015,81676,Tennis,2026-07-16,49,,Suunto App,Saint Bernard-les-Bains
+1016,81676,Tennis,2026-08-06,60,,Polar Flow,Sainte Moniquedan
+1017,81676,Tennis,2026-08-08,58,,Garmin Connect,Saint Jeanne-sur-Mer
+1018,83440,Triathlon,2025-09-17,43,15.2,Suunto App,De Sousa
+1019,83440,Triathlon,2025-09-18,55,17.7,Strava,Saint Éric
+1020,83440,Triathlon,2025-09-19,88,8.7,Suunto App,Benoitnec
+1021,83440,Triathlon,2025-10-01,58,18.3,Garmin Connect,Carpentier
+1022,83440,Triathlon,2025-10-07,43,4.8,Strava,Sainte Constance
+1023,83440,Triathlon,2025-10-08,83,15.2,Polar Flow,Delorme
+1024,83440,Triathlon,2025-10-10,73,5.0,Polar Flow,Saint DanielBourg
+1025,83440,Triathlon,2025-10-26,78,5.6,Polar Flow,Barbe-sur-Gomes
+1026,83440,Triathlon,2025-11-09,56,13.4,Apple Santé,Payet-la-Forêt
+1027,83440,Triathlon,2025-11-11,69,6.0,Suunto App,Thibault-sur-Roussel
+1028,83440,Triathlon,2025-11-26,44,9.5,Apple Santé,Lévêque
+1029,83440,Triathlon,2025-11-29,44,14.5,Garmin Connect,Devaux-la-Forêt
+1030,83440,Triathlon,2025-12-09,46,7.3,Polar Flow,Wagner
+1031,83440,Triathlon,2025-12-10,79,20.0,Apple Santé,Saint RémyBourg
+1032,83440,Triathlon,2025-12-21,61,11.8,Suunto App,Roux
+1033,83440,Triathlon,2026-01-01,48,12.0,Suunto App,Munoznec
+1034,83440,Triathlon,2026-01-02,45,16.4,Strava,Sainte Pénélope
+1035,83440,Triathlon,2026-01-03,75,6.1,Garmin Connect,Da Silvaboeuf
+1036,83440,Triathlon,2026-01-24,77,7.5,Garmin Connect,Sainte Aimée
+1037,83440,Triathlon,2026-01-27,79,8.0,Garmin Connect,Pasquier
+1038,83440,Triathlon,2026-01-28,90,14.3,Garmin Connect,Sainte Renéenec
+1039,83440,Triathlon,2026-02-26,41,13.8,Suunto App,Da Costa
+1040,83440,Triathlon,2026-03-26,50,6.4,Garmin Connect,Marty-la-Forêt
+1041,83440,Triathlon,2026-04-09,90,10.4,Garmin Connect,Boulanger-la-Forêt
+1042,83440,Triathlon,2026-05-02,44,11.7,Polar Flow,Leroy
+1043,83440,Triathlon,2026-05-09,47,8.8,Apple Santé,Saint Jeannine
+1044,83440,Triathlon,2026-06-07,67,13.5,Polar Flow,Ferreiranec
+1045,83440,Triathlon,2026-06-09,76,11.7,Suunto App,Saint Aimée
+1046,83440,Triathlon,2026-06-25,67,13.8,Apple Santé,Sainte Corinne-la-Forêt
+1047,83440,Triathlon,2026-07-22,75,12.4,Garmin Connect,Delormeboeuf
+1048,83440,Triathlon,2026-07-23,82,13.7,Apple Santé,Rodriguez-sur-Mer
+1049,83440,Triathlon,2026-07-26,66,15.3,Polar Flow,Hernandez-sur-Lebon
+1050,83440,Triathlon,2026-08-19,69,17.9,Garmin Connect,Reynaud-les-Bains
+1051,83440,Triathlon,2026-08-27,82,12.7,Polar Flow,Morin
+1052,83440,Triathlon,2026-09-02,42,18.1,Suunto App,Lombard-sur-Mer
+1053,83440,Triathlon,2026-09-03,88,12.4,Garmin Connect,Laurent
+1054,86486,Judo,2025-09-10,89,,Strava,Philippe-la-Forêt
+1055,86486,Judo,2025-09-11,82,,Garmin Connect,Sainte Laure
+1056,86486,Judo,2025-10-22,73,,Polar Flow,Gérard
+1057,86486,Judo,2025-11-30,62,,Apple Santé,Duhamel
+1058,86486,Judo,2026-01-18,63,,Strava,Gaydan
+1059,86486,Judo,2026-03-22,86,,Suunto App,Saint Michèle-sur-Mer
+1060,86486,Judo,2026-04-08,66,,Apple Santé,Letellier
+1061,86486,Judo,2026-07-03,83,,Garmin Connect,Arnaudnec
+1062,86486,Judo,2026-07-05,75,,Suunto App,Perret
+1063,86486,Judo,2026-07-05,87,,Garmin Connect,Fabre-sur-Carre
+1064,86486,Judo,2026-09-04,85,,Garmin Connect,Sainte Rémy
+1065,86633,Runing,2025-09-11,36,6.5,Apple Santé,Lemoine
+1066,86633,Runing,2025-09-25,45,4.5,Strava,Dufour-sur-Mer
+1067,86633,Runing,2025-09-30,49,11.4,Suunto App,Lacombedan
+1068,86633,Runing,2025-10-09,56,5.6,Strava,Klein
+1069,86633,Runing,2025-11-05,54,11.9,Strava,Becker
+1070,86633,Runing,2025-11-06,27,7.7,Apple Santé,Valette
+1071,86633,Runing,2025-11-22,59,4.8,Suunto App,Carpentiernec
+1072,86633,Runing,2025-11-22,31,8.0,Strava,Charlesboeuf
+1073,86633,Runing,2025-12-14,30,5.3,Garmin Connect,Lagarde-sur-Marty
+1074,86633,Runing,2025-12-19,52,6.8,Garmin Connect,Lopez
+1075,86633,Runing,2025-12-27,47,8.6,Polar Flow,Breton
+1076,86633,Runing,2026-01-14,43,8.7,Strava,Hamel
+1077,86633,Runing,2026-02-18,51,8.2,Garmin Connect,Rodrigues
+1078,86633,Runing,2026-03-03,45,10.8,Garmin Connect,Lefort-sur-Royer
+1079,86633,Runing,2026-04-02,51,11.1,Strava,Buisson-la-Forêt
+1080,86633,Runing,2026-04-07,48,11.4,Polar Flow,Saint Nath
+1081,86633,Runing,2026-06-04,54,9.1,Polar Flow,Carpentiernec
+1082,86633,Runing,2026-06-05,38,8.4,Apple Santé,Lévy
+1083,86633,Runing,2026-06-05,33,11.8,Strava,Saint Lorraine
+1084,86633,Runing,2026-06-18,54,5.2,Suunto App,Martinnec
+1085,86633,Runing,2026-07-09,37,6.7,Apple Santé,Paris
+1086,86633,Runing,2026-09-04,30,10.0,Apple Santé,Roux
+1087,86847,Football,2025-10-05,64,,Apple Santé,Sainte Xavier
+1088,86847,Football,2025-10-18,86,,Polar Flow,Boulangerdan
+1089,86847,Football,2025-12-11,70,,Suunto App,Dufour-sur-Ribeiro
+1090,86847,Football,2026-06-12,70,,Polar Flow,Voisin
+1091,86847,Football,2026-06-18,70,,Garmin Connect,Julien-la-Forêt
+1092,86948,Tennis,2025-12-06,71,,Apple Santé,VincentVille
+1093,86948,Tennis,2025-12-07,89,,Apple Santé,Sainte Amélie
+1094,86948,Tennis,2025-12-10,61,,Garmin Connect,Valette-sur-Pichon
+1095,86948,Tennis,2025-12-20,59,,Apple Santé,Morvan-sur-Rousset
+1096,86948,Tennis,2025-12-23,83,,Garmin Connect,Cousin
+1097,86948,Tennis,2025-12-27,73,,Garmin Connect,Saint JérômeBourg
+1098,86948,Tennis,2025-12-30,69,,Strava,Lopes-la-Forêt
+1099,86948,Tennis,2026-02-15,53,,Garmin Connect,Adam-sur-Thomas
+1100,86948,Tennis,2026-02-28,66,,Suunto App,Fournier
+1101,86948,Tennis,2026-02-28,85,,Polar Flow,Marin
+1102,86948,Tennis,2026-03-01,54,,Apple Santé,Roux-sur-Becker
+1103,86948,Tennis,2026-03-06,81,,Polar Flow,Legrand
+1104,86948,Tennis,2026-06-10,90,,Apple Santé,Vasseur-les-Bains
+1105,86948,Tennis,2026-07-11,78,,Strava,Lerouxnec
+1106,88193,Randonnée,2025-10-16,129,9.8,Suunto App,Sainte Arnaude-les-Bains
+1107,88193,Randonnée,2025-10-18,215,15.3,Strava,Teixeira
+1108,88193,Randonnée,2025-11-12,107,17.0,Suunto App,Sainte DeniseVille
+1109,88193,Randonnée,2025-12-05,156,14.6,Garmin Connect,Pinto
+1110,88193,Randonnée,2026-01-15,124,7.6,Apple Santé,Humbert
+1111,88193,Randonnée,2026-01-17,181,9.4,Polar Flow,Saint Pauline-les-Bains
+1112,88193,Randonnée,2026-06-03,114,17.9,Apple Santé,Pottier
+1113,88193,Randonnée,2026-07-11,167,15.9,Apple Santé,Sainte Valentine-les-Bains
+1114,89328,Tennis de table,2025-10-18,59,,Strava,Costa-les-Bains
+1115,89328,Tennis de table,2025-11-05,59,,Apple Santé,Saint Théophile
+1116,89328,Tennis de table,2025-11-12,48,,Polar Flow,Sainte Rolanddan
+1117,89328,Tennis de table,2025-12-23,50,,Polar Flow,Teixeira-les-Bains
+1118,89328,Tennis de table,2026-03-07,57,,Polar Flow,Maillard-sur-Mer
+1119,89328,Tennis de table,2026-03-20,55,,Strava,Goncalves
+1120,89328,Tennis de table,2026-04-22,53,,Suunto App,Wagner
+1121,89328,Tennis de table,2026-05-16,35,,Strava,Collet
+1122,89328,Tennis de table,2026-06-09,57,,Suunto App,Buissonboeuf
+1123,89328,Tennis de table,2026-06-14,48,,Garmin Connect,Bourdon
+1124,89328,Tennis de table,2026-06-21,32,,Suunto App,Saint Guillaumedan
+1125,89328,Tennis de table,2026-06-25,40,,Garmin Connect,Sainte Alice
+1126,89328,Tennis de table,2026-09-06,37,,Suunto App,Boulanger
+1127,89943,Randonnée,2025-10-22,155,5.9,Polar Flow,Legrand
+1128,89943,Randonnée,2025-10-28,203,14.3,Suunto App,Pineau
+1129,89943,Randonnée,2025-11-16,167,11.8,Strava,Weber
+1130,89943,Randonnée,2026-02-20,236,14.3,Apple Santé,Sainte Robert
+1131,89943,Randonnée,2026-04-22,92,15.4,Polar Flow,Renault-sur-Mer
+1132,89943,Randonnée,2026-05-10,180,15.3,Polar Flow,Potier
+1133,89943,Randonnée,2026-05-19,125,6.9,Strava,Besnard
+1134,89943,Randonnée,2026-07-02,98,10.3,Strava,Millet
+1135,89943,Randonnée,2026-08-26,196,8.1,Polar Flow,Laporte
+1136,90207,Tennis,2025-09-11,83,,Garmin Connect,Descamps-les-Bains
+1137,90207,Tennis,2025-09-27,52,,Garmin Connect,Cousin
+1138,90207,Tennis,2025-10-15,74,,Strava,Baronnec
+1139,90207,Tennis,2025-10-17,89,,Apple Santé,Renard
+1140,90207,Tennis,2025-10-25,49,,Apple Santé,Sainte Amélie
+1141,90207,Tennis,2025-12-27,66,,Strava,Aubry
+1142,90207,Tennis,2026-01-20,56,,Suunto App,Sainte Lucnec
+1143,90207,Tennis,2026-02-03,56,,Suunto App,Saint Élodienec
+1144,90207,Tennis,2026-02-24,58,,Polar Flow,Sainte Michelle-la-Forêt
+1145,90207,Tennis,2026-04-15,73,,Strava,GérardVille
+1146,90207,Tennis,2026-04-16,51,,Strava,Saint Henriette-la-Forêt
+1147,90207,Tennis,2026-04-22,47,,Suunto App,Fernandes
+1148,90207,Tennis,2026-05-13,89,,Apple Santé,BruneauVille
+1149,90207,Tennis,2026-05-26,77,,Suunto App,Nguyennec
+1150,90207,Tennis,2026-06-02,49,,Polar Flow,Bernard
+1151,90207,Tennis,2026-06-07,69,,Suunto App,Sainte Xavier-la-Forêt
+1152,90207,Tennis,2026-06-12,70,,Strava,Sainte Élisabethboeuf
+1153,90207,Tennis,2026-07-12,50,,Suunto App,Jourdan
+1154,90207,Tennis,2026-07-24,87,,Garmin Connect,Grenier
+1155,90207,Tennis,2026-07-26,57,,Garmin Connect,Fourniernec
+1156,90207,Tennis,2026-08-01,69,,Strava,Coulon
+1157,90207,Tennis,2026-08-04,50,,Suunto App,Joly
+1158,90284,Randonnée,2025-09-11,172,5.2,Apple Santé,Dupuis
+1159,90284,Randonnée,2025-11-04,104,14.1,Strava,Muller-les-Bains
+1160,90284,Randonnée,2025-12-14,122,12.8,Garmin Connect,Evrard
+1161,90284,Randonnée,2026-01-18,198,13.3,Apple Santé,Leconteboeuf
+1162,90284,Randonnée,2026-06-21,202,12.1,Garmin Connect,Andre
+1163,90813,Natation,2025-09-18,56,0.6,Strava,Rossi
+1164,90813,Natation,2025-09-27,44,1.4,Polar Flow,Lévy
+1165,90813,Natation,2025-10-03,35,1.9,Apple Santé,Lemonnier
+1166,90813,Natation,2025-12-06,48,2.0,Apple Santé,Lemonnier-sur-Mer
+1167,90813,Natation,2026-01-15,56,2.4,Strava,Nicolas-sur-Pottier
+1168,90813,Natation,2026-01-18,35,0.8,Suunto App,Sainte VictorBourg
+1169,90813,Natation,2026-02-03,56,1.6,Strava,Saint Thérèse-les-Bains
+1170,90813,Natation,2026-02-26,58,1.8,Suunto App,Kleinnec
+1171,90813,Natation,2026-03-26,49,1.8,Apple Santé,Colas
+1172,90813,Natation,2026-03-26,55,1.6,Apple Santé,Saint Juliettenec
+1173,90813,Natation,2026-06-17,57,1.6,Apple Santé,VincentVille
+1174,90813,Natation,2026-07-03,52,1.7,Suunto App,Webernec
+1175,90813,Natation,2026-07-04,52,1.1,Apple Santé,Saint Aurore
+1176,90813,Natation,2026-07-07,47,0.8,Garmin Connect,Berthelot
+1177,90813,Natation,2026-08-04,42,1.6,Garmin Connect,Leconte
+1178,91916,Rugby,2026-01-02,95,,Suunto App,Dubois-sur-Mer
+1179,91916,Rugby,2026-01-16,102,,Polar Flow,Leclercq
+1180,91916,Rugby,2026-01-17,76,,Polar Flow,Blondel-sur-Mer
+1181,91916,Rugby,2026-02-27,94,,Garmin Connect,Sainte Olivier
+1182,91916,Rugby,2026-03-29,95,,Strava,Fernandez
+1183,91916,Rugby,2026-09-05,83,,Suunto App,Laroche
+1184,92368,Runing,2025-10-01,27,4.6,Polar Flow,VoisinBourg
+1185,92368,Runing,2025-10-11,53,7.1,Polar Flow,Sainte Martin
+1186,92368,Runing,2025-10-18,33,8.3,Strava,Sainte Marguerite
+1187,92368,Runing,2025-10-29,44,11.9,Polar Flow,Laurent-sur-De Sousa
+1188,92368,Runing,2026-02-11,54,6.3,Apple Santé,FischerVille
+1189,92368,Runing,2026-03-06,29,9.9,Strava,Launay
+1190,92368,Runing,2026-03-22,42,7.8,Strava,Daniel-sur-Guyon
+1191,92368,Runing,2026-05-08,28,10.0,Strava,Sainte Aiméedan
+1192,92368,Runing,2026-05-19,27,9.2,Polar Flow,Saint Guillaumeboeuf
+1193,92368,Runing,2026-06-19,40,5.7,Suunto App,Boutin-sur-Lacroix
+1194,92368,Runing,2026-08-04,39,9.9,Apple Santé,Bazinnec
+1195,92368,Runing,2026-08-23,42,5.5,Apple Santé,ValléeBourg
+1196,92440,Triathlon,2025-09-11,62,14.9,Garmin Connect,Huet
+1197,92440,Triathlon,2025-09-21,81,5.9,Strava,Noël
+1198,92440,Triathlon,2025-10-30,61,3.6,Apple Santé,Sainte Margaux
+1199,92440,Triathlon,2025-11-04,67,19.8,Apple Santé,Sainte Jacqueline
+1200,92440,Triathlon,2025-11-05,41,15.6,Suunto App,Baudry
+1201,92440,Triathlon,2025-11-21,46,18.4,Apple Santé,Gaudinboeuf
+1202,92440,Triathlon,2025-11-25,57,19.6,Suunto App,Perrot
+1203,92440,Triathlon,2025-11-29,50,12.2,Suunto App,Saint Sébastien-la-Forêt
+1204,92440,Triathlon,2025-11-30,43,15.3,Polar Flow,Saint Jeanneboeuf
+1205,92440,Triathlon,2025-12-11,90,12.6,Apple Santé,Dupréboeuf
+1206,92440,Triathlon,2025-12-17,52,15.4,Polar Flow,De Sousa-les-Bains
+1207,92440,Triathlon,2026-01-01,41,19.3,Polar Flow,Benoitdan
+1208,92440,Triathlon,2026-01-24,57,16.8,Strava,Bourgeoisboeuf
+1209,92440,Triathlon,2026-01-30,69,10.2,Apple Santé,Bouchetboeuf
+1210,92440,Triathlon,2026-02-05,44,9.6,Apple Santé,Imbert
+1211,92440,Triathlon,2026-02-06,50,10.5,Garmin Connect,Saint LéonVille
+1212,92440,Triathlon,2026-02-27,55,12.9,Polar Flow,BriandVille
+1213,92440,Triathlon,2026-03-05,52,11.1,Strava,Lopes
+1214,92440,Triathlon,2026-04-03,82,8.7,Strava,LefebvreVille
+1215,92440,Triathlon,2026-04-07,45,12.9,Strava,MarchalBourg
+1216,92440,Triathlon,2026-04-14,65,7.1,Polar Flow,Mathieu-la-Forêt
+1217,92440,Triathlon,2026-04-15,71,10.8,Strava,Boulanger
+1218,92440,Triathlon,2026-04-17,77,15.8,Garmin Connect,Carpentier-les-Bains
+1219,92440,Triathlon,2026-05-07,46,10.0,Apple Santé,Lejeune-la-Forêt
+1220,92440,Triathlon,2026-05-23,77,18.8,Apple Santé,Sainte Émilienec
+1221,92440,Triathlon,2026-05-30,70,10.4,Garmin Connect,Ollivier
+1222,92440,Triathlon,2026-06-09,90,10.7,Suunto App,Riou
+1223,92440,Triathlon,2026-06-10,85,12.2,Polar Flow,Saint Marie
+1224,92440,Triathlon,2026-06-16,65,12.1,Garmin Connect,Lacroix
+1225,92440,Triathlon,2026-06-19,84,6.6,Garmin Connect,ChevallierVille
+1226,92440,Triathlon,2026-07-02,50,13.9,Suunto App,Sainte Édouard
+1227,92440,Triathlon,2026-07-11,89,19.0,Suunto App,Wagner
+1228,92440,Triathlon,2026-07-17,67,8.9,Apple Santé,Françoisboeuf
+1229,92440,Triathlon,2026-07-25,66,13.9,Garmin Connect,Clerc-les-Bains
+1230,92440,Triathlon,2026-07-31,40,9.5,Apple Santé,Perez-sur-Masson
+1231,92440,Triathlon,2026-08-20,50,19.2,Polar Flow,Juliendan
+1232,92440,Triathlon,2026-09-03,70,7.2,Polar Flow,Carre
+1233,93699,Runing,2025-09-16,35,6.8,Strava,Le Gall-la-Forêt
+1234,93699,Runing,2025-09-25,53,6.2,Garmin Connect,Bernard
+1235,93699,Runing,2025-10-26,41,11.7,Suunto App,Thomasdan
+1236,93699,Runing,2025-10-26,40,11.7,Suunto App,ChevalierVille
+1237,93699,Runing,2025-11-04,36,4.7,Apple Santé,Saint Dominique
+1238,93699,Runing,2025-11-09,40,8.7,Polar Flow,Girard
+1239,93699,Runing,2025-11-26,27,8.5,Strava,Colin-les-Bains
+1240,93699,Runing,2025-12-12,43,6.8,Polar Flow,Da Silva
+1241,93699,Runing,2026-02-03,43,6.2,Apple Santé,Laine
+1242,93699,Runing,2026-02-07,30,8.6,Suunto App,Sainte ZoéBourg
+1243,93699,Runing,2026-03-14,51,7.7,Garmin Connect,Boyer-sur-Nicolas
+1244,93699,Runing,2026-03-31,58,11.9,Polar Flow,Launay
+1245,93699,Runing,2026-04-11,45,9.2,Polar Flow,Mahe-sur-Dijoux
+1246,93699,Runing,2026-04-14,25,4.6,Strava,Chauvet
+1247,93699,Runing,2026-04-17,56,6.8,Garmin Connect,Leclercq
+1248,93699,Runing,2026-05-16,51,4.6,Apple Santé,Diaz-sur-Mer
+1249,93699,Runing,2026-05-23,25,7.4,Apple Santé,Sainte Théophileboeuf
+1250,93699,Runing,2026-06-14,25,9.4,Suunto App,Chauvet-sur-Leroy
+1251,93699,Runing,2026-06-19,36,9.6,Suunto App,Da Silva-les-Bains
+1252,93699,Runing,2026-06-30,55,11.9,Polar Flow,Pinto
+1253,93699,Runing,2026-07-07,45,4.2,Polar Flow,Monnier
+1254,93699,Runing,2026-07-08,29,8.9,Strava,Mallet
+1255,93699,Runing,2026-07-10,51,4.6,Apple Santé,Pages-sur-Potier
+1256,93699,Runing,2026-07-23,59,10.2,Polar Flow,Sainte Maryseboeuf
+1257,93699,Runing,2026-08-09,27,10.1,Suunto App,Guichard
+1258,93699,Runing,2026-09-06,53,7.7,Apple Santé,Marie
+1259,94680,Natation,2025-10-16,32,1.7,Apple Santé,Picard-les-Bains
+1260,94680,Natation,2025-10-29,41,1.5,Polar Flow,Sainte Hélène-sur-Mer
+1261,94680,Natation,2026-03-29,35,2.1,Garmin Connect,Lejeune
+1262,94680,Natation,2026-04-18,44,0.9,Garmin Connect,Sainte Émilenec
+1263,94680,Natation,2026-06-02,33,0.6,Garmin Connect,ValléeBourg
+1264,96558,Triathlon,2025-09-28,59,16.6,Strava,Sainte Raymond
+1265,96558,Triathlon,2025-12-09,80,14.1,Strava,Sainte ThéophileVille
+1266,96558,Triathlon,2026-01-09,69,10.8,Polar Flow,Delannoy-sur-Techer
+1267,96558,Triathlon,2026-02-05,82,10.4,Apple Santé,Martineau
+1268,96558,Triathlon,2026-02-07,90,7.4,Polar Flow,Duval
+1269,96558,Triathlon,2026-04-05,60,9.9,Apple Santé,Perrin-les-Bains
+1270,96558,Triathlon,2026-04-10,85,16.1,Strava,Sainte Gilles
+1271,96558,Triathlon,2026-04-24,70,17.1,Apple Santé,Antoinenec
+1272,96558,Triathlon,2026-05-13,56,18.7,Suunto App,Fouchernec
+1273,96558,Triathlon,2026-05-29,50,19.1,Suunto App,DumontBourg
+1274,96558,Triathlon,2026-06-03,84,17.8,Strava,Vaillant
+1275,96558,Triathlon,2026-06-09,63,12.6,Strava,Blanchard
+1276,96558,Triathlon,2026-06-11,63,16.1,Strava,Masse
+1277,96558,Triathlon,2026-06-12,58,19.2,Strava,Schneider
+1278,96558,Triathlon,2026-06-21,90,16.8,Apple Santé,Vidal
+1279,96558,Triathlon,2026-07-15,42,19.0,Apple Santé,Sauvage-sur-Marques
+1280,96558,Triathlon,2026-07-17,87,3.2,Polar Flow,Mercier
+1281,96558,Triathlon,2026-08-08,90,18.2,Garmin Connect,Bousquetdan
+1282,97309,Tennis,2025-10-03,83,,Strava,Rodrigues
+1283,97309,Tennis,2025-10-21,52,,Strava,Garcia
+1284,97309,Tennis,2025-10-24,53,,Polar Flow,Roger
+1285,97309,Tennis,2025-11-22,67,,Garmin Connect,Breton-sur-Durand
+1286,97309,Tennis,2025-12-24,56,,Apple Santé,Saint Nicole
+1287,97309,Tennis,2026-02-03,71,,Polar Flow,Saint Christelledan
+1288,97309,Tennis,2026-03-06,68,,Polar Flow,Nicolas-sur-Sauvage
+1289,97309,Tennis,2026-05-05,77,,Garmin Connect,Bertrand-sur-Petitjean
+1290,97309,Tennis,2026-05-23,87,,Polar Flow,Albert
+1291,97309,Tennis,2026-06-17,86,,Strava,Sainte Camille
+1292,97309,Tennis,2026-07-29,70,,Suunto App,Sainte Michèledan
+1293,97309,Tennis,2026-08-09,49,,Strava,Raynaud
+1294,97309,Tennis,2026-08-26,54,,Strava,Paris
+1295,97309,Tennis,2026-09-01,84,,Polar Flow,Mendèsboeuf
+1296,99401,Runing,2025-09-12,37,8.8,Apple Santé,Chevalierboeuf
+1297,99401,Runing,2025-10-04,50,7.9,Garmin Connect,Pottier
+1298,99401,Runing,2025-10-10,30,4.5,Suunto App,Courtoisdan
+1299,99401,Runing,2025-11-27,28,4.2,Strava,Gayboeuf
+1300,99401,Runing,2026-01-08,31,4.2,Garmin Connect,Ollivier-sur-Dupuy
+1301,99401,Runing,2026-01-13,27,8.7,Polar Flow,Saint Claude
+1302,99401,Runing,2026-01-16,45,7.9,Garmin Connect,Garnier-la-Forêt
+1303,99401,Runing,2026-01-20,35,7.8,Polar Flow,Jacob
+1304,99401,Runing,2026-01-30,33,5.6,Strava,Sainte NicolasBourg
+1305,99401,Runing,2026-02-04,46,10.1,Apple Santé,Marin-sur-Mer
+1306,99401,Runing,2026-02-08,47,10.5,Garmin Connect,Peltier-sur-Gillet
+1307,99401,Runing,2026-02-10,30,8.4,Strava,Sainte Honorénec
+1308,99401,Runing,2026-03-28,34,10.4,Strava,Saint Thibaultdan
+1309,99401,Runing,2026-04-04,48,8.2,Strava,Perret
+1310,99401,Runing,2026-04-11,53,10.1,Strava,Sainte FrançoiseBourg
+1311,99401,Runing,2026-04-12,45,4.5,Suunto App,MerleBourg
+1312,99401,Runing,2026-04-21,60,6.6,Garmin Connect,Royer
+1313,99401,Runing,2026-06-16,44,11.2,Strava,Gay
+1314,99401,Runing,2026-06-23,42,8.8,Strava,Deschamps
