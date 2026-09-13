@@ -13,11 +13,17 @@ import time
 
 import requests
 
-# TODO : remplace par l'adresse réelle de l'entreprise (siège / lieu de travail)
-ADRESSE_ENTREPRISE = "1 Place de la Comédie, 34000 Montpellier"
+# Adresse réelle de l'entreprise, précisée dans la note de cadrage (section 5.1)
+ADRESSE_ENTREPRISE = "1362 Av. des Platanes, 34970 Lattes"
 
 SEUIL_KM_MARCHE_COURSE = 15
 SEUIL_KM_VELO_AUTRE = 25
+
+# Au-delà de ce multiplicateur du seuil, on considère que ce n'est plus une
+# question de "limite un peu dépassée" mais une probable erreur de
+# déclaration (cf. note de cadrage : salarié qui déclare venir à pied en
+# habitant à 50 km, alors que le seuil est 15 km -> ratio > 3).
+MULTIPLICATEUR_ANOMALIE = 2
 
 DISTANCE_MATRIX_URL = "https://maps.googleapis.com/maps/api/distancematrix/json"
 
@@ -64,6 +70,7 @@ def calculer_trajet(id_salarie: int, adresse_domicile: str, moyen_deplacement: s
             "distance_km": None,
             "duree_estimee_min": None,
             "distance_eligible": False,
+            "anomalie_declaration": False,
             "erreur": data.get("status"),
         }
 
@@ -75,6 +82,7 @@ def calculer_trajet(id_salarie: int, adresse_domicile: str, moyen_deplacement: s
             "distance_km": None,
             "duree_estimee_min": None,
             "distance_eligible": False,
+            "anomalie_declaration": False,
             "erreur": element.get("status"),
         }
 
@@ -87,6 +95,7 @@ def calculer_trajet(id_salarie: int, adresse_domicile: str, moyen_deplacement: s
         "distance_km": distance_km,
         "duree_estimee_min": duree_min,
         "distance_eligible": distance_km <= seuil,
+        "anomalie_declaration": distance_km > seuil * MULTIPLICATEUR_ANOMALIE,
         "erreur": None,
     }
 

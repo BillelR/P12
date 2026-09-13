@@ -23,7 +23,7 @@ import pandas as pd
 from sqlalchemy import text
 
 from db_utils import get_engine, log_event, timed_step, GOOGLE_MAPS_API_KEY
-from google_maps_client import calculer_tous_les_trajets
+from google_maps_client import calculer_tous_les_trajets, MULTIPLICATEUR_ANOMALIE
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RH_FILE = BASE_DIR / "data" / "raw" / "donnees_rh.xlsx"
@@ -65,7 +65,7 @@ def extraire_transformer_sports() -> pd.DataFrame:
 
 
 def extraire_activites() -> pd.DataFrame:
-    return pd.read_csv(ACTIVITES_FILE, parse_dates=["date_activite"])
+    return pd.read_csv(ACTIVITES_FILE, parse_dates=["date_debut_activite", "date_fin_activite"])
 
 
 # ----------------------------------------------------------------------------
@@ -93,7 +93,7 @@ def calculer_eligibilite(df_salaries: pd.DataFrame, df_activites: pd.DataFrame,
     date_limite = datetime.now() - timedelta(days=365)
 
     # Nombre d'activités sur 12 mois glissants, par salarié
-    activites_recentes = df_activites[df_activites["date_activite"] >= date_limite]
+    activites_recentes = df_activites[df_activites["date_debut_activite"] >= date_limite]
     nb_activites = activites_recentes.groupby("id_salarie").size().rename("nb_activites_12_mois")
 
     df_eligibilite = df_salaries[["id_salarie"]].merge(
@@ -154,9 +154,8 @@ def main():
                   nb_lignes_traitees=len(df_sports))
 
         with timed_step("Chargement activites_sportives"):
-            charger_table(df_activites[["id_salarie", "sport", "date_activite",
-                                         "duree_minutes", "distance_km",
-                                         "application_source", "ville_pratique"]],
+            charger_table(df_activites[["id_salarie", "date_debut_activite", "sport",
+                                         "distance_m", "date_fin_activite", "commentaire"]],
                           "activites_sportives", engine)
         log_event("INFO", "chargement", "Table activites_sportives chargée.",
                   nb_lignes_traitees=len(df_activites))
@@ -172,7 +171,8 @@ def main():
                 if not df_trajets_ok.empty:
                     charger_table(
                         df_trajets_ok[["id_salarie", "mode_transport", "distance_km",
-                                        "duree_estimee_min", "distance_eligible"]],
+                                        "duree_estimee_min", "distance_eligible",
+                                        "anomalie_declaration"]],
                         "trajets_domicile_travail", engine
                     )
         nb_erreurs = sum(1 for r in resultats_trajets if r["erreur"] is not None)
@@ -182,6 +182,29 @@ def main():
             f"{len(resultats_trajets)} trajets calculés, {nb_erreurs} erreurs.",
             nb_lignes_traitees=len(resultats_trajets),
         )
+
+        # Détection des anomalies de déclaration (cf. note de cadrage :
+        # ex. salarié déclarant venir à pied en habitant à 50 km). On alerte
+        # explicitement sur Slack, avec le détail des salariés concernés.
+        with timed_step("Détection des anomalies de déclaration"):
+            anomalies = [r for r in resultats_trajets
+                         if r["erreur"] is None and r.get("anomalie_declaration")]
+            if anomalies:
+                df_anomalies = pd.DataFrame(anomalies).merge(
+                    df_salaries[["id_salarie", "nom", "prenom"]], on="id_salarie", how="left"
+                )
+                details = "\n".join(
+                    f"- {row['prenom']} {row['nom']} (id {row['id_salarie']}) : "
+                    f"déclare \"{row['mode_transport']}\" mais habite à {row['distance_km']} km "
+                    f"(seuil dépassé de plus de {int((MULTIPLICATEUR_ANOMALIE - 1) * 100)}%)"
+                    for _, row in df_anomalies.iterrows()
+                )
+                message = (f"{len(anomalies)} déclaration(s) de mode de transport suspecte(s) "
+                           f"détectée(s) :\n{details}")
+                log_event("WARNING", "anomalie_declaration", message, alerter_slack=True)
+            else:
+                log_event("INFO", "anomalie_declaration",
+                          "Aucune anomalie de déclaration détectée.")
 
         with timed_step("Calcul de l'éligibilité"):
             df_eligibilite = calculer_eligibilite(df_salaries, df_activites, resultats_trajets)

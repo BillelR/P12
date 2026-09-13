@@ -37,19 +37,18 @@ CREATE TABLE sports_pratiques (
 -- Source : données générées (façon Strava), fenêtre glissante 12 mois
 -- ----------------------------------------------------------------------------
 CREATE TABLE activites_sportives (
-    id_activite         SERIAL PRIMARY KEY,
-    id_salarie          INTEGER REFERENCES salaries(id_salarie),
-    sport                TEXT NOT NULL,
-    date_activite        DATE NOT NULL,
-    duree_minutes        INTEGER NOT NULL,
-    distance_km          NUMERIC(5, 1),      -- NULL si non pertinent pour le sport
-    application_source   TEXT,               -- app "façon Strava" simulée (Faker)
-    ville_pratique       TEXT,               -- ville simulée (Faker)
-    created_at           TIMESTAMPTZ DEFAULT now()
+    id_activite           SERIAL PRIMARY KEY,
+    id_salarie            INTEGER REFERENCES salaries(id_salarie),
+    date_debut_activite   TIMESTAMP NOT NULL,
+    sport                 TEXT NOT NULL,
+    distance_m            INTEGER,           -- en mètres, NULL si non pertinent (ex: escalade)
+    date_fin_activite     TIMESTAMP NOT NULL,
+    commentaire           TEXT,              -- commentaire optionnel façon Strava
+    created_at            TIMESTAMPTZ DEFAULT now()
 );
 
 CREATE INDEX idx_activites_salarie ON activites_sportives(id_salarie);
-CREATE INDEX idx_activites_date ON activites_sportives(date_activite);
+CREATE INDEX idx_activites_date ON activites_sportives(date_debut_activite);
 
 -- ----------------------------------------------------------------------------
 -- Table 4 : trajets_domicile_travail

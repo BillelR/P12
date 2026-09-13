@@ -99,11 +99,14 @@ def controler_activites(df: pd.DataFrame) -> list:
     _valider(batch, gx.expectations.ExpectColumnValuesToNotBeNull(column="id_salarie"),
               "id_salarie renseigné", resultats, critique=True)
     _valider(batch, gx.expectations.ExpectColumnValuesToBeBetween(
-                column="duree_minutes", min_value=1, max_value=300),
-              "duree_minutes plausible (1 à 300 min)", resultats, critique=True)
+                column="date_debut_activite", min_value=date_min, max_value=date_max),
+              "date_debut_activite dans la fenêtre glissante de 12 mois", resultats, critique=True)
+    _valider(batch, gx.expectations.ExpectColumnPairValuesAToBeGreaterThanB(
+                column_A="date_fin_activite", column_B="date_debut_activite", or_equal=True),
+              "date_fin_activite postérieure ou égale à date_debut_activite", resultats, critique=True)
     _valider(batch, gx.expectations.ExpectColumnValuesToBeBetween(
-                column="date_activite", min_value=date_min, max_value=date_max),
-              "date_activite dans la fenêtre glissante de 12 mois", resultats, critique=True)
+                column="distance_m", min_value=0, max_value=200_000),
+              "distance_m non négative et plausible (0 à 200 km)", resultats, critique=True)
     _valider(batch, gx.expectations.ExpectColumnValuesToNotBeNull(column="sport"),
               "sport renseigné", resultats, critique=True)
 
