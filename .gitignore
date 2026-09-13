@@ -7,3 +7,4 @@ venv/
 debezium/data/
 debezium/conf/application.properties
 kestra/flows/pipeline_sport_data.yml
+*.swp
