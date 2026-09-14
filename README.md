@@ -1,29 +1,78 @@
 # Sport Data Solution — POC "Avantages Sportifs"
 
-POC pour un programme d'avantages sportifs en entreprise :
-- **Prime de mobilité** (5% du salaire) pour les salariés venant au travail en mode actif
-  (marche/course ≤15km, vélo/trottinette ≤25km), vérifiée via l'API Google Maps.
-- **5 jours "bien-être"** pour les salariés ayant pratiqué ≥15 activités sportives sur les
-  12 derniers mois glissants (données simulées façon Strava).
+POC technique pour un programme d'avantages sportifs en entreprise, réalisé dans le cadre
+du Projet 13 (parcours Data Engineer). Répond à la note de cadrage fournie : tester la
+faisabilité technique, déterminer les données nécessaires, et calculer l'impact financier
+sur l'entreprise des avantages proposés.
+
+**Dépôt GitHub : https://github.com/BillelR/P11**
+
+## Les deux avantages simulés
+
+- **Prime de mobilité** (5% du salaire annuel brut) pour les salariés venant au travail en
+  mode actif (marche/course ≤ 15 km, vélo/trottinette/autres ≤ 25 km), vérifié
+  automatiquement via l'API Google Maps (Distance Matrix) à partir de l'adresse déclarée
+  et de l'adresse de l'entreprise (1362 Av. des Platanes, 34970 Lattes).
+- **5 jours "bien-être"** pour les salariés ayant pratiqué au moins 15 activités sportives
+  sur les 12 derniers mois glissants (données simulées façon Strava, en l'absence
+  d'intégration réelle à ce stade du POC).
+
+## Résultats obtenus (dernier run)
+
+| Indicateur | Valeur |
+|---|---|
+| Salariés éligibles à la prime mobilité | 68 / 161 (42,2%) |
+| Salariés éligibles aux jours bien-être | 87 / 161 (54,0%) |
+| Coût total de la prime | ≈ 172 480 € |
+| Budget de référence communiqué | 172 000 € (écart de 0,28%) |
+| Jours bien-être accordés au total | 435 |
 
 ## Architecture
 
 | Étape | Outil |
 |---|---|
-| Infra | Supabase (PostgreSQL cloud) |
-| Génération de données | Python |
+| Stockage principal | Supabase (PostgreSQL cloud) |
+| Génération de données simulées | Python + Faker |
 | ETL | Python / pandas / SQLAlchemy |
-| Calcul distances | API Google Maps (Distance Matrix) |
-| Monitoring | Table `logs_monitoring` + alertes Slack (webhook) |
-| Reporting | Power BI Service |
+| Calcul de distances | API Google Maps (Distance Matrix) |
+| Détection d'anomalies | Règle métier (écart déclaration/distance réelle) |
+| Tests de cohérence des données | Great Expectations |
+| Tests unitaires | pytest |
+| Change Data Capture (temps réel) | Debezium Server + Neon PostgreSQL + Redis Streams |
+| Orchestration | Kestra (Docker) |
+| Notifications | Slack (webhook) |
+| Reporting | Power BI Desktop |
+
+### Pourquoi Neon en plus de Supabase pour le CDC ?
+
+Supabase réserve sa connexion directe (nécessaire pour la réplication logique PostgreSQL
+utilisée par Debezium) à un add-on payant sur son offre gratuite — sa connexion "pooler"
+gratuite ne supporte pas ce protocole. **Neon**, un service PostgreSQL serverless
+équivalent, supporte nativement la réplication logique gratuitement. Le stockage principal
+du projet reste Supabase ; Neon héberge uniquement une base de démonstration simplifiée
+pour illustrer le mécanisme de CDC (capture des nouvelles activités sportives en temps
+réel, déclenchement de messages de félicitation Slack).
+
+### Pourquoi Redis plutôt que Kafka ?
+
+L'architecture cible suggérée dans la note de cadrage utilise Kafka (Redpanda) et Spark.
+Pour ce POC, exécuté sur une VM à ressources limitées, Redis Streams a été retenu comme
+sink Debezium : il est officiellement supporté par Debezium Server, très léger (~100 Mo
+contre plusieurs Go pour un cluster Kafka), et suffisant pour démontrer le principe du CDC
+à cette échelle. Une migration vers Kafka serait recommandée en production à plus grande
+échelle.
 
 ## Installation
 
 ### 1. Prérequis
 - Python 3.10+
-- Un projet Supabase déjà créé, avec `sql/schema.sql` déjà exécuté (SQL Editor > coller > Run)
-- Une clé API Google Maps avec la Distance Matrix API activée
-- (Optionnel) Un webhook Slack pour les alertes de monitoring
+- Docker et Docker Compose (pour Debezium, Redis, Kestra)
+- Un projet Supabase (stockage principal)
+- Un projet Neon (démo CDC) avec la réplication logique activée
+- Une clé API Google Maps avec la **Distance Matrix API activée** (pas seulement
+  autorisée dans les restrictions de la clé — l'API doit aussi être activée au niveau
+  du projet Google Cloud, dans APIs & Services > Library)
+- Un webhook Slack (Incoming Webhook)
 
 ### 2. Installer les dépendances
 
@@ -37,17 +86,20 @@ pip install -r requirements.txt --break-system-packages
 cp .env.example .env
 ```
 
-Puis édite `.env` et renseigne :
-- `SUPABASE_DB_URL` : ta connection string PostgreSQL (Supabase > Settings > Database > Connection string > Direct)
+Édite `.env` et renseigne :
+- `SUPABASE_DB_URL` : connection string PostgreSQL Supabase, via le **pooler** (Settings
+  > Database > Connection string), port 5432
 - `GOOGLE_MAPS_API_KEY` : ta clé API Google Maps
-- `SLACK_WEBHOOK_URL` : ton webhook Slack (optionnel)
+- `SLACK_WEBHOOK_URL` : ton URL de webhook Slack
 
-⚠️ Le fichier `.env` n'est **jamais** commité (voir `.gitignore`).
+⚠️ Le fichier `.env` n'est **jamais** commité (voir `.gitignore`), de même que
+`debezium/conf/application.properties` et `kestra/flows/pipeline_sport_data.yml` une fois
+remplis avec de vraies valeurs (utiliser les fichiers `.example` fournis comme modèles).
 
-### 4. Vérifier l'adresse de l'entreprise
+### 4. Adresse de l'entreprise
 
-Dans `src/google_maps_client.py`, la constante `ADRESSE_ENTREPRISE` définit le lieu de
-travail utilisé pour calculer les distances. Ajuste-la si besoin.
+Définie dans `src/google_maps_client.py` (`ADRESSE_ENTREPRISE`), conforme à la note de
+cadrage : `1362 Av. des Platanes, 34970 Lattes`.
 
 ## Utilisation
 
@@ -57,9 +109,10 @@ travail utilisé pour calculer les distances. Ajuste-la si besoin.
 python src/generate_activities.py
 ```
 
-Génère `data/generated/activites_sportives_generees.csv` (~1300 activités simulées avec
-Faker, sur une fenêtre glissante de 12 mois, calibrées pour obtenir un mix réaliste de
-salariés éligibles/non-éligibles au seuil de 15 activités/an).
+Génère `data/generated/activites_sportives_generees.csv` : plusieurs milliers de lignes
+(~3800), sur une fenêtre glissante de 12 mois, avec les métadonnées demandées dans la note
+de cadrage (ID, ID salarié, date de début, type, distance en mètres, date de fin,
+commentaire optionnel).
 
 ### Étape 2 — Contrôler la qualité des données
 
@@ -67,9 +120,8 @@ salariés éligibles/non-éligibles au seuil de 15 activités/an).
 python src/quality_checks.py
 ```
 
-Exécute 13 contrôles Great Expectations (unicité des ID, plages de valeurs plausibles,
-cohérence des dates...). Retourne un code d'erreur si un contrôle critique échoue —
-bloque le pipeline avant tout chargement en base.
+14 contrôles Great Expectations (cohérence des ID, dates, distances non négatives...).
+Retourne un code d'erreur en cas d'échec critique, bloquant le pipeline avant chargement.
 
 ### Étape 3 — Lancer le pipeline ETL complet
 
@@ -77,129 +129,140 @@ bloque le pipeline avant tout chargement en base.
 python src/etl.py
 ```
 
-Ce script :
 1. Vide les tables Supabase (idempotence)
 2. Charge les données RH, sportives et les activités générées
 3. Calcule les trajets domicile-travail via Google Maps
-4. Calcule la table d'éligibilité consolidée (`eligibilite_avantages`)
-5. Log chaque étape dans `logs_monitoring` et envoie une alerte Slack en fin de run
+4. **Détecte les anomalies de déclaration** (ex : salarié déclarant venir à pied en
+   habitant à plus de 30 km — 2× le seuil légal de 15 km) et alerte sur Slack
+5. Calcule la table d'éligibilité consolidée et le coût du programme
+6. Log chaque étape dans `logs_monitoring`, alerte Slack en fin de run
 
-### Étape 4 (optionnel) — CDC en temps réel avec Debezium + Redis
-
-Démontre la capture des changements sur `salaries` et `eligibilite_avantages` en
-temps réel, directement depuis le WAL de PostgreSQL (Supabase).
-
-**4.1 — Préparer Supabase** (une seule fois) :
-
-Dans le SQL Editor Supabase, exécute :
-```sql
-CREATE PUBLICATION dbz_publication FOR TABLE salaries, eligibilite_avantages;
-```
-
-**4.2 — Compléter la config Debezium** :
-
-Édite `debezium/conf/application.properties` et remplace les valeurs `CHANGE_ME`
-par tes vraies informations de connexion Supabase — utilise le **Session pooler**
-ou la **connexion directe** (port 5432), PAS le "Transaction pooler" (port 6543)
-qui ne supporte pas la réplication logique.
-
-**4.3 — Lancer l'infra Docker** :
+### Étape 4 — Exécuter les tests
 
 ```bash
-docker compose up -d redis debezium-server
-docker compose logs -f debezium-server   # vérifier que la capture démarre sans erreur
+python -m pytest
 ```
 
-**4.4 — Lancer le consommateur CDC** (dans un terminal séparé) :
+36 tests unitaires couvrant : seuils d'éligibilité Google Maps, détection d'anomalies,
+calcul d'éligibilité (cas limites), parsing des événements CDC, génération de données.
 
+### Étape 5 (optionnel) — CDC en temps réel avec Debezium + Redis
+
+Démontre la capture des changements sur Neon en temps réel, avec messages de félicitation
+automatiques façon Strava (conformes à l'exemple de la note de cadrage).
+
+**5.1 — Activer la réplication logique sur Neon**, puis créer la publication :
+```sql
+CREATE PUBLICATION dbz_publication FOR TABLE salaries, eligibilite_avantages, activites_sportives;
+```
+
+**5.2 — Compléter `debezium/conf/application.properties`** avec les identifiants Neon
+(connexion directe, pas de pooler).
+
+**5.3 — Lancer l'infra :**
+```bash
+docker compose up -d redis debezium-server
+```
+
+**5.4 — Lancer le consommateur** (terminal séparé) :
 ```bash
 python src/cdc_consumer.py
 ```
 
-**4.5 — Démonstration live** : modifie une ligne dans la table `salaries` ou
-`eligibilite_avantages` depuis le Table Editor Supabase → le changement apparaît
-quasi instantanément dans le terminal du consommateur, et une alerte Slack part
-automatiquement pour les changements d'éligibilité.
+**5.5 — Démonstration** : insère une activité dans Neon —
+```sql
+INSERT INTO activites_sportives (id_salarie, sport, duree_minutes, distance_km)
+VALUES (1, 'Runing', 46, 10.8);
+```
+— le message `🎉 Bravo ... ! Tu viens de courir 10.8 km en 46 min !` apparaît en quelques
+secondes dans le terminal et sur Slack.
 
-### Étape 5 (optionnel) — Orchestration complète avec Kestra
+### Étape 6 (optionnel) — Orchestration complète avec Kestra
 
 ```bash
 docker compose up -d kestra
 ```
 
-Ouvre `http://localhost:8080` dans le navigateur, va dans **Flows**, tu devrais voir
-le flow `sportdata.pipeline_sport_data` déjà chargé (monté depuis `kestra/flows/`).
-Clique sur **Execute** pour lancer manuellement l'enchaînement complet
-(génération → contrôle qualité → ETL), chaque étape tournant dans un conteneur
-Python isolé.
+Ouvre `http://localhost:8080`, crée un compte admin local, importe
+`kestra/flows/pipeline_sport_data.yml` (après y avoir renseigné tes clés), puis exécute le
+flow `pipeline_sport_data` — génération, contrôle qualité et ETL s'enchaînent dans un
+conteneur Docker dédié (image construite via `docker build -t sport-data-pipeline:latest .`).
 
-⚠️ Chaque tâche réinstalle les dépendances à chaque exécution (`pip install` inline) —
-c'est volontairement simplifié pour ce POC. En production, on construirait une image
-Docker dédiée avec les dépendances déjà installées, pour des exécutions plus rapides.
+## Dashboard Power BI
 
-## Budget mémoire (VM à 4 Go de RAM)
+Fichier : `Rabouz_Billel_dashboard_avantages_sportifs.pbix` (Power BI Desktop, connexion
+directe à Supabase via connecteur PostgreSQL).
 
-| Composant | RAM estimée |
-|---|---|
-| Redis | ~100 Mo |
-| Debezium Server | ~700 Mo |
-| Kestra (standalone) | ~1,2 Go |
-| Scripts Python (ETL, quality checks) | ~200 Mo |
-| **Total infra** | **~2,2 Go** |
+**Page 1 — Vue d'ensemble** : KPIs (effectif, % éligibles), répartition par mode de
+déplacement, coût total de la prime vs budget de référence (172 000 €, valeur communiquée
+par le mentor du projet), jours bien-être accordés.
 
-Reste de marge pour l'OS et le navigateur (Power BI Service), mais prévoir du swap
-en filet de sécurité et fermer les applications non nécessaires pendant la démo.
+**Page 2 — Détail par salarié** : tableau nominatif complet, répartition des éligibilités
+par BU.
+
+**Page 3 — Monitoring pipeline** : historique des exécutions (table `logs_monitoring`),
+répartition des logs par niveau (INFO/WARNING/ERROR).
 
 ## Structure du projet
 
 ```
 sport-data-solution/
 ├── data/
-│   ├── raw/                    # fichiers Excel fournis (RH, sportif)
+│   ├── raw/                    # fichiers Excel fournis (RH, sportif) — données fictives
 │   └── generated/              # activités simulées générées (Faker)
 ├── src/
-│   ├── generate_activities.py  # génération des données sportives simulées (Faker)
+│   ├── generate_activities.py  # génération des données sportives simulées
 │   ├── quality_checks.py       # contrôles qualité (Great Expectations)
 │   ├── db_utils.py             # connexion Supabase + logging + Slack
-│   ├── google_maps_client.py   # calcul des distances domicile-travail
-│   ├── cdc_consumer.py         # consommateur des événements CDC (Redis)
+│   ├── google_maps_client.py   # calcul distances + détection d'anomalies
+│   ├── cdc_consumer.py         # consommateur CDC (Redis) + messages de félicitation
 │   └── etl.py                  # pipeline principal (orchestration)
+├── tests/                      # tests unitaires pytest (36 tests)
 ├── sql/
-│   └── schema.sql              # schéma des 6 tables Supabase
-├── debezium/
-│   └── conf/application.properties  # config CDC (source Supabase, sink Redis)
-├── kestra/
-│   └── flows/pipeline_sport_data.yml  # orchestration du pipeline complet
+│   ├── schema.sql                    # schéma des 6 tables Supabase
+│   └── schema_neon_cdc_demo.sql      # schéma simplifié pour la démo CDC (Neon)
+├── debezium/conf/              # config CDC (source Neon, sink Redis)
+├── kestra/flows/                # orchestration du pipeline complet
 ├── docs/
 │   └── RGPD.md                 # cadrage conformité RGPD
-├── docker-compose.yml          # infra Redis + Debezium Server + Kestra
-├── .env.example                # template de configuration (sans secrets)
-├── .gitignore
+├── docker-compose.yml           # infra Redis + Debezium Server + Kestra
+├── Dockerfile                   # image du pipeline pour Kestra
+├── Rabouz_Billel_dashboard_avantages_sportifs.pbix
+├── .env.example
+├── pytest.ini
 ├── requirements.txt
 └── README.md
 ```
 
-## Schéma de données
+## Schéma de données (Supabase)
 
-- **salaries** : données RH (161 salariés)
+- **salaries** : données RH (161 salariés, données fictives)
 - **sports_pratiques** : sport déclaré par salarié (donnée brute fournie)
-- **activites_sportives** : historique d'activités simulé (façon Strava)
-- **trajets_domicile_travail** : résultats des calculs Google Maps
+- **activites_sportives** : historique d'activités simulé (~3800 lignes, façon Strava,
+  incluant date de début/fin, distance en mètres, commentaire optionnel)
+- **trajets_domicile_travail** : résultats des calculs Google Maps, avec flag
+  `anomalie_declaration` pour les écarts manifestes
 - **eligibilite_avantages** : table consolidée utilisée par Power BI
-- **logs_monitoring** : logs d'exécution du pipeline (niveau, étape, message, durée)
+- **logs_monitoring** : logs d'exécution du pipeline
+
+## Conformité RGPD
+
+Voir `docs/RGPD.md`. Les données RH et sportives utilisées sont **fictives** (fournies
+dans un cadre pédagogique) ; le cadrage RGPD documenté couvre les garanties nécessaires
+pour un déploiement avec de vraies données personnelles.
 
 ## Limites connues / axes d'amélioration
 
-- Le fichier "Données Sportives" fourni ne contenait qu'une ligne par salarié (le sport
-  pratiqué), sans historique d'activités : celui-ci a donc été simulé statistiquement
-  (processus de Poisson par sport, avec variabilité individuelle d'assiduité, via Faker).
-- La stack Debezium/Kestra a été calibrée pour une VM à 4 Go de RAM (sink Redis plutôt
-  que Kafka, Kestra en mode standalone H2). En production à plus grande échelle, une
-  vraie infrastructure Kafka apporterait une meilleure durabilité et un rejeu des
-  événements plus robuste.
-- Les tâches Kestra réinstallent leurs dépendances Python à chaque exécution (image
-  générique `python:3.12-slim`) ; une image Docker dédiée pré-construite accélérerait
-  les exécutions en production.
-- Grafana n'a pas été retenu pour le monitoring : Power BI couvre déjà ce besoin
-  (reporting business + page de suivi qualité/exécution), évitant la redondance de deux
-  outils de dashboard pour un même périmètre.
+- Le volume d'activités simulées (~3800) reste inférieur à un historique réel Strava sur
+  161 salariés ; le générateur est calibré pour un mix réaliste d'éligibles/non-éligibles
+  plutôt que pour un volume maximal.
+- La stack Debezium/Kafka/Spark suggérée dans la note de cadrage a été simplifiée
+  (Redis au lieu de Kafka, pas de Spark/Delta Lake) pour tenir sur une VM à ressources
+  limitées ; les mêmes principes (capture WAL, streaming, notification temps réel) sont
+  démontrés à plus petite échelle.
+- Le budget de 172 000 € utilisé comme référence de comparaison a été communiqué de
+  mémoire par le mentor du projet ("il lui semble") et n'est pas un chiffre officiel
+  confirmé par écrit.
+- Les tâches Kestra reconstruisent leurs dépendances à chaque exécution dans l'image
+  Docker du pipeline ; en production, une image versionnée et pré-construite serait
+  préférable.
