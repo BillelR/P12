@@ -5,7 +5,7 @@ du Projet 13 (parcours Data Engineer). Répond à la note de cadrage fournie : t
 faisabilité technique, déterminer les données nécessaires, et calculer l'impact financier
 sur l'entreprise des avantages proposés.
 
-**Dépôt GitHub : https://github.com/BillelR/P11**
+**Dépôt GitHub : https://github.com/BillelR/P12**
 
 ## Les deux avantages simulés
 
