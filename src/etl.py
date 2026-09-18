@@ -21,9 +21,14 @@ from pathlib import Path
 
 import pandas as pd
 from sqlalchemy import text
+from sqlalchemy.exc import SQLAlchemyError
 
 from db_utils import get_engine, log_event, timed_step, GOOGLE_MAPS_API_KEY
-from google_maps_client import calculer_tous_les_trajets, MULTIPLICATEUR_ANOMALIE
+from google_maps_client import (
+    calculer_tous_les_trajets,
+    MULTIPLICATEUR_ANOMALIE,
+    GoogleMapsAuthError,
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RH_FILE = BASE_DIR / "data" / "raw" / "donnees_rh.xlsx"
@@ -32,12 +37,50 @@ ACTIVITES_FILE = BASE_DIR / "data" / "generated" / "activites_sportives_generees
 
 SEUIL_ACTIVITES_AN = 15
 
+# Colonnes attendues après renommage, pour chaque source. pandas.rename()
+# n'échoue jamais silencieusement si un intitulé Excel a changé — la colonne
+# est juste absente du DataFrame, et l'erreur (KeyError) ne remonte que
+# beaucoup plus tard, au moment du chargement en base. On valide donc tout
+# de suite, avec un message qui pointe vers le fichier et la colonne en cause.
+COLONNES_SALARIES_ATTENDUES = [
+    "id_salarie", "nom", "prenom", "date_naissance", "bu", "date_embauche",
+    "salaire_annuel", "type_contrat", "jours_cp", "adresse_domicile",
+    "moyen_deplacement",
+]
+COLONNES_SPORTS_ATTENDUES = ["id_salarie", "sport"]
+COLONNES_ACTIVITES_ATTENDUES = [
+    "id_salarie", "date_debut_activite", "sport", "distance_m",
+    "date_fin_activite", "commentaire",
+]
+
+
+def _valider_dataframe(df: pd.DataFrame, colonnes_attendues: list[str], source: Path):
+    """
+    Vérifie qu'un DataFrame fraîchement lu n'est pas vide et contient bien
+    toutes les colonnes attendues (après renommage). Lève ValueError avec un
+    message actionnable plutôt que de laisser une KeyError obscure survenir
+    plus tard, au milieu du chargement en base.
+    """
+    if df.empty:
+        raise ValueError(f"Fichier vide ou sans lignes exploitables : {source}")
+
+    manquantes = [c for c in colonnes_attendues if c not in df.columns]
+    if manquantes:
+        raise ValueError(
+            f"Colonne(s) manquante(s) dans {source} après renommage : {manquantes}. "
+            f"Le fichier source a probablement changé d'intitulés de colonnes."
+        )
+
 
 # ----------------------------------------------------------------------------
 # 1. EXTRACTION + TRANSFORMATION
 # ----------------------------------------------------------------------------
 
 def extraire_transformer_salaries() -> pd.DataFrame:
+    if not RH_FILE.exists():
+        raise FileNotFoundError(
+            f"Fichier RH introuvable : {RH_FILE}. Vérifie data/raw/donnees_rh.xlsx."
+        )
     df = pd.read_excel(RH_FILE)
     df = df.rename(columns={
         "ID salarié": "id_salarie",
@@ -52,20 +95,33 @@ def extraire_transformer_salaries() -> pd.DataFrame:
         "Adresse du domicile": "adresse_domicile",
         "Moyen de déplacement": "moyen_deplacement",
     })
+    _valider_dataframe(df, COLONNES_SALARIES_ATTENDUES, RH_FILE)
     return df
 
 
 def extraire_transformer_sports() -> pd.DataFrame:
+    if not SPORT_FILE.exists():
+        raise FileNotFoundError(
+            f"Fichier sportif introuvable : {SPORT_FILE}. Vérifie data/raw/donnees_sportives.xlsx."
+        )
     df = pd.read_excel(SPORT_FILE)
     df = df.rename(columns={
         "ID salarié": "id_salarie",
         "Pratique d'un sport": "sport",
     })
+    _valider_dataframe(df, COLONNES_SPORTS_ATTENDUES, SPORT_FILE)
     return df
 
 
 def extraire_activites() -> pd.DataFrame:
-    return pd.read_csv(ACTIVITES_FILE, parse_dates=["date_debut_activite", "date_fin_activite"])
+    if not ACTIVITES_FILE.exists():
+        raise FileNotFoundError(
+            f"Fichier d'activités introuvable : {ACTIVITES_FILE}. "
+            f"As-tu lancé src/generate_activities.py avant le pipeline ?"
+        )
+    df = pd.read_csv(ACTIVITES_FILE, parse_dates=["date_debut_activite", "date_fin_activite"])
+    _valider_dataframe(df, COLONNES_ACTIVITES_ATTENDUES, ACTIVITES_FILE)
+    return df
 
 
 # ----------------------------------------------------------------------------
@@ -163,7 +219,19 @@ def main():
         with timed_step("Calcul des trajets Google Maps"):
             if not GOOGLE_MAPS_API_KEY:
                 raise RuntimeError("GOOGLE_MAPS_API_KEY manquant dans .env")
-            resultats_trajets = calculer_tous_les_trajets(df_salaries, GOOGLE_MAPS_API_KEY)
+            try:
+                resultats_trajets = calculer_tous_les_trajets(df_salaries, GOOGLE_MAPS_API_KEY)
+            except GoogleMapsAuthError as e:
+                # Erreur bloquante (clé invalide/expirée ou quota épuisé) :
+                # on ne tente pas de continuer sans distances, on interrompt
+                # le pipeline avant le chargement des trajets/éligibilité.
+                # L'alerte Slack est envoyée une seule fois, par le handler
+                # global ci-dessous — on se contente ici de tracer le contexte.
+                log_event(
+                    "ERROR", "google_maps_auth",
+                    f"Clé API Google Maps invalide/expirée ou quota épuisé : {e}",
+                )
+                raise
             if resultats_trajets:
                 df_trajets_ok = pd.DataFrame(
                     [r for r in resultats_trajets if r["erreur"] is None]
@@ -221,6 +289,37 @@ def main():
             alerter_slack=True,
         )
 
+    except GoogleMapsAuthError as e:
+        log_event(
+            "ERROR", "pipeline_erreur",
+            f"Pipeline interrompu : clé API Google Maps invalide/expirée ou quota "
+            f"épuisé ({e}). Vérifie GOOGLE_MAPS_API_KEY dans .env et le quota sur "
+            f"la console Google Cloud.",
+            alerter_slack=True,
+        )
+        raise
+    except FileNotFoundError as e:
+        log_event(
+            "ERROR", "pipeline_erreur",
+            f"Pipeline interrompu : fichier source introuvable ({e}).",
+            alerter_slack=True,
+        )
+        raise
+    except ValueError as e:
+        log_event(
+            "ERROR", "pipeline_erreur",
+            f"Pipeline interrompu : données source invalides ({e}).",
+            alerter_slack=True,
+        )
+        raise
+    except SQLAlchemyError as e:
+        log_event(
+            "ERROR", "pipeline_erreur",
+            f"Pipeline interrompu : erreur base de données ({e}). Vérifie que "
+            f"sql/schema.sql a bien été exécuté et que Supabase est joignable.",
+            alerter_slack=True,
+        )
+        raise
     except Exception as e:
         log_event("ERROR", "pipeline_erreur", f"Le pipeline a échoué : {e}", alerter_slack=True)
         raise

@@ -251,6 +251,27 @@ Voir `docs/RGPD.md`. Les données RH et sportives utilisées sont **fictives** (
 dans un cadre pédagogique) ; le cadrage RGPD documenté couvre les garanties nécessaires
 pour un déploiement avec de vraies données personnelles.
 
+## Pistes pour la montée en charge
+
+Ce POC est dimensionné pour 161 salariés et ~3 800 activités simulées, sur une VM à
+ressources limitées. Voici les points qui mériteraient d'être revus pour un déploiement à
+plus grande échelle (plusieurs milliers de salariés, exécution quotidienne en continu) :
+
+| Composant | Limite actuelle (POC) | Piste à l'échelle |
+|---|---|---|
+| Appels Google Maps Distance Matrix | 1 requête HTTP par salarié (jusqu'à 161 appels séquentiels, pause de 50 ms entre chacun) | Regrouper plusieurs origines par requête — l'API Distance Matrix accepte jusqu'à 25 origines × 25 destinations par appel — pour diviser le nombre de requêtes par ~25 ; remplacer la pause fixe par un budget de rate limit explicite |
+| Mise en cache des distances | Recalcul systématique des 161 trajets à chaque run | Mettre en cache la distance calculée par salarié (une adresse domicile change rarement) et ne recalculer que les nouveaux salariés ou les adresses modifiées — impact direct sur le coût API et le temps d'exécution |
+| Chargement Supabase | `TRUNCATE` + rechargement complet à chaque run (idempotence simple mais coûteuse) | Passer à un chargement incrémental (upsert sur `id_salarie` / clé d'activité) une fois le volume trop important pour un full reload à chaque exécution ; vérifier la présence d'index sur les clés de jointure (`id_salarie`) |
+| Orchestration Kestra | Un seul flow, une tâche Docker séquentielle (génération → contrôle qualité → ETL) | Découper le flow en tâches indépendantes (extraction / qualité / trajets / chargement) pour paralléliser ce qui peut l'être et isoler les reprises sur erreur ; Kestra supporte nativement l'exécution distribuée sur plusieurs workers |
+| CDC (Debezium + Redis) | Choisi pour sa légèreté sur une VM de démo (~100 Mo vs plusieurs Go pour un cluster Kafka) | Migrer vers Kafka/Redpanda (architecture cible de la note de cadrage) si le volume d'événements dépasse ce que Redis Streams peut absorber, ou si une rétention/relecture longue durée est nécessaire |
+| Great Expectations | 14 contrôles exécutés sur l'intégralité du DataFrame en mémoire à chaque run | Passer à des contrôles incrémentaux (uniquement sur les nouvelles lignes) et à un moteur out-of-core (Spark/Dask) si le volume d'activités dépasse la mémoire disponible sur une seule machine |
+| Monitoring | Table `logs_monitoring` interrogée directement par Power BI, sans politique de purge | Ajouter une rétention/archivage sur `logs_monitoring` pour éviter une croissance non bornée ; envisager un outil dédié (Grafana/Prometheus) si le volume de logs dépasse ce qui reste lisible dans Power BI |
+
+Le point le plus impactant à court terme serait la mise en cache des distances Google
+Maps : c'est à la fois ce qui limite le coût API (facturation au-delà du quota gratuit
+mensuel) et ce qui limite le temps d'exécution du pipeline, puisque l'adresse d'un
+salarié change rarement d'un run à l'autre.
+
 ## Limites connues / axes d'amélioration
 
 - Le volume d'activités simulées (~3800) reste inférieur à un historique réel Strava sur
@@ -261,8 +282,7 @@ pour un déploiement avec de vraies données personnelles.
   limitées ; les mêmes principes (capture WAL, streaming, notification temps réel) sont
   démontrés à plus petite échelle.
 - Le budget de 172 000 € utilisé comme référence de comparaison a été communiqué de
-  mémoire par le mentor du projet ("il lui semble") et n'est pas un chiffre officiel
-  confirmé par écrit.
+  mémoire et n'est pas un chiffre officiel confirmé par écrit.
 - Les tâches Kestra reconstruisent leurs dépendances à chaque exécution dans l'image
   Docker du pipeline ; en production, une image versionnée et pré-construite serait
   préférable.

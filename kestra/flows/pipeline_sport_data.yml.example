@@ -12,6 +12,12 @@ description: |
       docker build -t sport-data-pipeline:latest .
   (à relancer après toute modification du code).
 
+triggers:
+  - id: declenchement_quotidien
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 6 * * *" # tous les jours à 6h00
+    timezone: Europe/Paris # Kestra planifie en UTC par défaut, on fixe le fuseau explicitement
+
 tasks:
   - id: pipeline_complet
     type: io.kestra.plugin.scripts.python.Commands
