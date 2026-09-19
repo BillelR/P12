@@ -30,6 +30,6 @@ tasks:
       GOOGLE_MAPS_API_KEY: CHANGE_ME
       SLACK_WEBHOOK_URL: CHANGE_ME
     commands:
-      - python3 src/generate_activities.py
-      - python3 src/quality_checks.py
-      - python3 src/etl.py
+      - python3 /app/src/generate_activities.py
+      - python3 /app/src/quality_checks.py
+      - python3 /app/src/etl.py
